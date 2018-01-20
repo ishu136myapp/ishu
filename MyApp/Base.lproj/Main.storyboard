@@ -17,9 +17,9 @@
                     <tabBar key="tabBar" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="SBM-O4-zRo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.45882352939999999" green="0.28627450980000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.46274509803921571" green="0.039215686274509803" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="pVt-Wv-N0p" kind="relationship" relationship="viewControllers" id="SnD-HN-h7j"/>
@@ -40,10 +40,10 @@
                     <tabBarItem key="tabBarItem" title="" image="search_unselected" selectedImage="search_selected" id="rr0-3n-YDi">
                         <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-16"/>
                     </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="KF5-CC-IwQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="arrow_back" id="KF5-CC-IwQ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.45882352939999999" green="0.28627450980000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.46274509800000002" green="0.039215686270000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -63,10 +63,10 @@
                     <tabBarItem key="tabBarItem" title="" image="add_unselected" selectedImage="add_selected" id="LpZ-kz-qaZ">
                         <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-16"/>
                     </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="P9g-1M-Sji">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="arrow_back" id="P9g-1M-Sji">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.45882352939999999" green="0.28627450980000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.46274509800000002" green="0.039215686270000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -79,17 +79,46 @@
             </objects>
             <point key="canvasLocation" x="-455" y="-447"/>
         </scene>
+        <!--News Details View Controller-->
+        <scene sceneID="UJH-dh-Axt">
+            <objects>
+                <viewController storyboardIdentifier="NewsDetailsViewController" id="ofb-zz-oSq" customClass="NewsDetailsViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="100" contentMode="scaleToFill" id="gbR-IS-mL7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Hi1-QU-fEB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HVe-Z4-gMT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SFX-jc-wSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1854" y="-1957"/>
+        </scene>
         <!--Home-->
         <scene sceneID="tbX-zA-wXf">
             <objects>
-                <viewController id="rb2-FR-Ke8" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="rb2-FR-Ke8" customClass="HomeViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4IF-Wf-bRO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TM-70-muK">
+                                <rect key="frame" x="175" y="86" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="ofb-zz-oSq" kind="push" id="gnA-qU-FIl"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Fah-63-1t3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="YDH-VE-9sM"/>
+                    <connections>
+                        <segue destination="ofb-zz-oSq" kind="show" id="Ebc-EZ-bsD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uA-Eg-kzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -102,10 +131,11 @@
                     <tabBarItem key="tabBarItem" title="" image="home_unselected" selectedImage="home_selected" id="hEX-hv-trm">
                         <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-16"/>
                     </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="L6A-WX-afr">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="arrow_back" backIndicatorTransitionMaskImage="arrow_back" id="L6A-WX-afr">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.45882352941176469" green="0.28627450980392155" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.46274509803921571" green="0.039215686274509803" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -125,10 +155,10 @@
                     <tabBarItem key="tabBarItem" title="" image="profile_unselected" selectedImage="profile_selected" id="bdY-zu-4NM">
                         <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-16"/>
                     </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="search_selected" id="dok-Jb-jyf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="arrow_back" id="dok-Jb-jyf">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.45882352939999999" green="0.28627450980000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.46274509800000002" green="0.039215686270000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -148,10 +178,10 @@
                     <tabBarItem key="tabBarItem" title="" image="tag_unselected" selectedImage="tag_selected" id="RNC-gy-HXs">
                         <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-16"/>
                     </tabBarItem>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="fJy-Nt-Drh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="arrow_back" id="fJy-Nt-Drh">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.45882352939999999" green="0.28627450980000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.46274509800000002" green="0.039215686270000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -167,7 +197,7 @@
         <!--Tagline-->
         <scene sceneID="yT1-NW-1kc">
             <objects>
-                <viewController id="37k-Po-hgV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TagLineViewController" id="37k-Po-hgV" customClass="TagLineViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Y1-A8-OgB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,17 +210,17 @@
             </objects>
             <point key="canvasLocation" x="198" y="-1148"/>
         </scene>
-        <!--Upload News-->
+        <!--Upload-->
         <scene sceneID="2Gc-H8-9wG">
             <objects>
-                <viewController id="b8F-3Y-Y56" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UploadViewController" id="b8F-3Y-Y56" customClass="UploadViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="f4c-gH-3FE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yTD-cj-GdH"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Upload News" id="tLg-TV-Xhp"/>
+                    <navigationItem key="navigationItem" title="Upload" id="tLg-TV-Xhp"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XeT-YW-ygt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -199,7 +229,7 @@
         <!--Profile-->
         <scene sceneID="sQa-dy-zvi">
             <objects>
-                <viewController id="m25-fe-Zkv" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileViewController" id="m25-fe-Zkv" customClass="ProfileViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vhf-aR-7cy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,17 +242,17 @@
             </objects>
             <point key="canvasLocation" x="862" y="-1148"/>
         </scene>
-        <!--Search-->
+        <!--Search News-->
         <scene sceneID="Ajh-Db-kAH">
             <objects>
-                <viewController id="fdw-W1-ky3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchNewsViewController" id="fdw-W1-ky3" customClass="SearchNewsViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3dW-vg-tsA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="P5A-Ue-4rZ"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Search" id="8do-xx-UBc"/>
+                    <navigationItem key="navigationItem" title="Search News" id="8do-xx-UBc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ArA-lI-NDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -232,6 +262,7 @@
     <resources>
         <image name="add_selected" width="25" height="25"/>
         <image name="add_unselected" width="25" height="25"/>
+        <image name="arrow_back" width="20" height="20"/>
         <image name="home_selected" width="25" height="25"/>
         <image name="home_unselected" width="25" height="25"/>
         <image name="profile_selected" width="25" height="25"/>
@@ -241,4 +272,7 @@
         <image name="tag_selected" width="25" height="25"/>
         <image name="tag_unselected" width="25" height="25"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="gnA-qU-FIl"/>
+    </inferredMetricsTieBreakers>
 </document>
