@@ -80,20 +80,20 @@
             <point key="canvasLocation" x="-455" y="-447"/>
         </scene>
         <!--News Details View Controller-->
-        <scene sceneID="UJH-dh-Axt">
+        <scene sceneID="9af-YM-pRF">
             <objects>
-                <viewController storyboardIdentifier="NewsDetailsViewController" id="ofb-zz-oSq" customClass="NewsDetailsViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" tag="100" contentMode="scaleToFill" id="gbR-IS-mL7">
+                <viewController id="Eba-S0-lPk" customClass="NewsDetailsViewController" customModule="MyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" tag="100" contentMode="scaleToFill" id="TVf-Kj-kbA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="Hi1-QU-fEB"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="BMg-cJ-FNF"/>
                     </view>
-                    <navigationItem key="navigationItem" id="HVe-Z4-gMT"/>
+                    <navigationItem key="navigationItem" id="BhB-Pg-cjw"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SFX-jc-wSc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ebT-bq-WWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1854" y="-1957"/>
+            <point key="canvasLocation" x="-1762" y="-1927"/>
         </scene>
         <!--Home-->
         <scene sceneID="tbX-zA-wXf">
@@ -103,26 +103,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TM-70-muK">
-                                <rect key="frame" x="175" y="86" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="He6-JG-tkX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <segue destination="ofb-zz-oSq" kind="push" id="gnA-qU-FIl"/>
+                                    <outlet property="dataSource" destination="rb2-FR-Ke8" id="QKj-ZP-ggK"/>
+                                    <outlet property="delegate" destination="4IF-Wf-bRO" id="URq-xQ-ugk"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="He6-JG-tkX" firstAttribute="bottom" secondItem="Fah-63-1t3" secondAttribute="bottom" id="LlS-tH-V2m"/>
+                            <constraint firstItem="He6-JG-tkX" firstAttribute="top" secondItem="Fah-63-1t3" secondAttribute="top" id="P1k-AH-15B"/>
+                            <constraint firstItem="He6-JG-tkX" firstAttribute="trailing" secondItem="Fah-63-1t3" secondAttribute="trailing" id="RlH-tR-9fi"/>
+                            <constraint firstItem="He6-JG-tkX" firstAttribute="leading" secondItem="Fah-63-1t3" secondAttribute="leading" id="m2H-wc-Gzw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Fah-63-1t3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="YDH-VE-9sM"/>
                     <connections>
-                        <segue destination="ofb-zz-oSq" kind="show" id="Ebc-EZ-bsD"/>
+                        <outlet property="tblFeed" destination="He6-JG-tkX" id="iGb-nP-Bc7"/>
+                        <segue destination="Eba-S0-lPk" kind="show" id="5pd-hX-LZD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0uA-Eg-kzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1794" y="-1148"/>
+            <point key="canvasLocation" x="-1794.4000000000001" y="-1148.2758620689656"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="teh-vd-xRr">
@@ -272,7 +279,4 @@
         <image name="tag_selected" width="25" height="25"/>
         <image name="tag_unselected" width="25" height="25"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="gnA-qU-FIl"/>
-    </inferredMetricsTieBreakers>
 </document>

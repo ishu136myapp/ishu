@@ -20,6 +20,7 @@ class SuperViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.configureNavigationBar()
         
     }
     override func viewWillAppear(_ animated: Bool)

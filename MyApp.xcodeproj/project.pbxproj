@@ -18,6 +18,15 @@
 		70046ECD2013EBEC00DBBB88 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70046EC82013EBEB00DBBB88 /* Roboto-Medium.ttf */; };
 		70046ECE2013EBEC00DBBB88 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70046EC92013EBEB00DBBB88 /* Roboto-Bold.ttf */; };
 		70046ECF2013EBEC00DBBB88 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70046ECA2013EBEC00DBBB88 /* Roboto-Regular.ttf */; };
+		701DC9AD20164F720020103D /* ImageNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DC9AB20164F710020103D /* ImageNewsTableViewCell.swift */; };
+		701DC9AE20164F720020103D /* ImageNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 701DC9AC20164F710020103D /* ImageNewsTableViewCell.xib */; };
+		701DC9B8201653360020103D /* GenericButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DC9B1201653360020103D /* GenericButton.swift */; };
+		701DC9B9201653360020103D /* GenericImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DC9B2201653360020103D /* GenericImageView.swift */; };
+		701DC9BA201653360020103D /* GenericLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DC9B3201653360020103D /* GenericLabel.swift */; };
+		701DC9BB201653360020103D /* GenericTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DC9B4201653360020103D /* GenericTextField.swift */; };
+		701DC9BC201653360020103D /* GenericTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DC9B5201653360020103D /* GenericTextView.swift */; };
+		701DC9BD201653360020103D /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DC9B6201653360020103D /* GenericView.swift */; };
+		701DC9C0201659D40020103D /* ishu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 701DC9BF201659D40020103D /* ishu.jpg */; };
 		7023855F20124BB90070A97C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7023855E20124BB90070A97C /* AppDelegate.swift */; };
 		7023856420124BB90070A97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7023856220124BB90070A97C /* Main.storyboard */; };
 		7023856620124BB90070A97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7023856520124BB90070A97C /* Assets.xcassets */; };
@@ -65,6 +74,15 @@
 		70046EC82013EBEB00DBBB88 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		70046EC92013EBEB00DBBB88 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		70046ECA2013EBEC00DBBB88 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		701DC9AB20164F710020103D /* ImageNewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageNewsTableViewCell.swift; sourceTree = "<group>"; };
+		701DC9AC20164F710020103D /* ImageNewsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageNewsTableViewCell.xib; sourceTree = "<group>"; };
+		701DC9B1201653360020103D /* GenericButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericButton.swift; sourceTree = "<group>"; };
+		701DC9B2201653360020103D /* GenericImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericImageView.swift; sourceTree = "<group>"; };
+		701DC9B3201653360020103D /* GenericLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericLabel.swift; sourceTree = "<group>"; };
+		701DC9B4201653360020103D /* GenericTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTextField.swift; sourceTree = "<group>"; };
+		701DC9B5201653360020103D /* GenericTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTextView.swift; sourceTree = "<group>"; };
+		701DC9B6201653360020103D /* GenericView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
+		701DC9BF201659D40020103D /* ishu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ishu.jpg; sourceTree = "<group>"; };
 		7023855B20124BB90070A97C /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7023855E20124BB90070A97C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7023856320124BB90070A97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,6 +134,8 @@
 		70046E692013E0EA00DBBB88 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				701DC9B0201653360020103D /* Generic */,
+				701DC9AA20164F710020103D /* Cusom Cell */,
 				709D8EE62013F0C500764F4E /* Super view classes */,
 				70046EBD2013E7FE00DBBB88 /* Tab Bar Classes */,
 				709D8EE72013F0D800764F4E /* Flow Classess */,
@@ -147,6 +167,44 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		701DC9AA20164F710020103D /* Cusom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				701DC9AF20164F800020103D /* Table view cell */,
+			);
+			path = "Cusom Cell";
+			sourceTree = "<group>";
+		};
+		701DC9AF20164F800020103D /* Table view cell */ = {
+			isa = PBXGroup;
+			children = (
+				701DC9AB20164F710020103D /* ImageNewsTableViewCell.swift */,
+				701DC9AC20164F710020103D /* ImageNewsTableViewCell.xib */,
+			);
+			path = "Table view cell";
+			sourceTree = "<group>";
+		};
+		701DC9B0201653360020103D /* Generic */ = {
+			isa = PBXGroup;
+			children = (
+				701DC9B1201653360020103D /* GenericButton.swift */,
+				701DC9B2201653360020103D /* GenericImageView.swift */,
+				701DC9B3201653360020103D /* GenericLabel.swift */,
+				701DC9B4201653360020103D /* GenericTextField.swift */,
+				701DC9B5201653360020103D /* GenericTextView.swift */,
+				701DC9B6201653360020103D /* GenericView.swift */,
+			);
+			path = Generic;
+			sourceTree = "<group>";
+		};
+		701DC9C1201659E60020103D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				701DC9BF201659D40020103D /* ishu.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		7023855220124BB90070A97C = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +229,7 @@
 				7023856520124BB90070A97C /* Assets.xcassets */,
 				7023856720124BB90070A97C /* LaunchScreen.storyboard */,
 				7023856A20124BB90070A97C /* Info.plist */,
+				701DC9C1201659E60020103D /* Images */,
 				709D8F242013F62000764F4E /* Configuration */,
 				709D8EE82013F51E00764F4E /* Swifts_Master */,
 				70046E692013E0EA00DBBB88 /* Classes */,
@@ -298,6 +357,7 @@
 			files = (
 				7023856920124BB90070A97C /* LaunchScreen.storyboard in Resources */,
 				7023856620124BB90070A97C /* Assets.xcassets in Resources */,
+				701DC9AE20164F720020103D /* ImageNewsTableViewCell.xib in Resources */,
 				70046ECC2013EBEC00DBBB88 /* Roboto-Light.ttf in Resources */,
 				70046ECD2013EBEC00DBBB88 /* Roboto-Medium.ttf in Resources */,
 				7023856420124BB90070A97C /* Main.storyboard in Resources */,
@@ -305,6 +365,7 @@
 				70046ECF2013EBEC00DBBB88 /* Roboto-Regular.ttf in Resources */,
 				70046ECE2013EBEC00DBBB88 /* Roboto-Bold.ttf in Resources */,
 				709D8F192013F51E00764F4E /* MIPopUpOverlay.xib in Resources */,
+				701DC9C0201659D40020103D /* ishu.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				701DC9BD201653360020103D /* GenericView.swift in Sources */,
 				70046E682013E0DF00DBBB88 /* SuperViewController.swift in Sources */,
 				709D8F0F2013F51E00764F4E /* ExtensionUIResponder.swift in Sources */,
 				709D8F122013F51E00764F4E /* ExtensionUIView.swift in Sources */,
@@ -323,12 +385,14 @@
 				709D8F1A2013F51E00764F4E /* MIToastAlert.swift in Sources */,
 				709D8F082013F51E00764F4E /* ExtensionUIApplication.swift in Sources */,
 				709D8F282013F62000764F4E /* APIRequest.swift in Sources */,
+				701DC9B9201653360020103D /* GenericImageView.swift in Sources */,
 				70046EBC2013E7E500DBBB88 /* HomeViewController.swift in Sources */,
 				709D8F022013F51E00764F4E /* ExetensionFloat.swift in Sources */,
 				709D8F0C2013F51E00764F4E /* ExtensionUIImage.swift in Sources */,
 				709D8F172013F51E00764F4E /* MILoader.swift in Sources */,
 				709D8F062013F51E00764F4E /* ExtensionInt.swift in Sources */,
 				709D8EE52013F0BE00764F4E /* NewsDetailsViewController.swift in Sources */,
+				701DC9BB201653360020103D /* GenericTextField.swift in Sources */,
 				709D8F2A2013F62000764F4E /* MessagesConstant.swift in Sources */,
 				709D8F182013F51E00764F4E /* MIPopUpOverlay.swift in Sources */,
 				70046EC32013E94900DBBB88 /* TagLineViewController.swift in Sources */,
@@ -337,18 +401,22 @@
 				709D8F112013F51E00764F4E /* ExtensionUITextView.swift in Sources */,
 				70046EC52013E96A00DBBB88 /* ProfileViewController.swift in Sources */,
 				70046EC12013E91B00DBBB88 /* UploadViewController.swift in Sources */,
+				701DC9BC201653360020103D /* GenericTextView.swift in Sources */,
 				709D8F162013F51E00764F4E /* MIKeyboardManager.swift in Sources */,
+				701DC9B8201653360020103D /* GenericButton.swift in Sources */,
 				709D8F142013F51E00764F4E /* ExtensionURL.swift in Sources */,
 				70046EBF2013E88400DBBB88 /* SearchNewsViewController.swift in Sources */,
 				709D8F0E2013F51E00764F4E /* ExtensionUINavigationController.swift in Sources */,
 				7023855F20124BB90070A97C /* AppDelegate.swift in Sources */,
 				709D8F0D2013F51E00764F4E /* ExtensionUIImageView.swift in Sources */,
+				701DC9BA201653360020103D /* GenericLabel.swift in Sources */,
 				709D8F072013F51E00764F4E /* ExtensionString.swift in Sources */,
 				709D8F092013F51E00764F4E /* ExtensionUIBarButtonItem.swift in Sources */,
 				709D8F052013F51E00764F4E /* ExtensionDouble.swift in Sources */,
 				709D8F292013F62000764F4E /* ApplicationConstant.swift in Sources */,
 				709D8F032013F51E00764F4E /* ExtensionDate.swift in Sources */,
 				709D8F0B2013F51E00764F4E /* ExtensionUIColor.swift in Sources */,
+				701DC9AD20164F720020103D /* ImageNewsTableViewCell.swift in Sources */,
 				709D8F042013F51E00764F4E /* ExtensionDictionary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
