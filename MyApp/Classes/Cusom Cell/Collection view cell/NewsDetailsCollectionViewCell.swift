@@ -1,15 +1,15 @@
 //
-//  ImageNewsTableViewCell.swift
+//  NewsDetailsCollectionViewCell.swift
 //  MyApp
 //
-//  Created by ishwar lal janwa on 22/01/18.
+//  Created by ishwar lal janwa on 27/01/18.
 //  Copyright © 2018 MyApp. All rights reserved.
 //
 
 import UIKit
 
-class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout
-{
+class NewsDetailsCollectionViewCell: UICollectionViewCell,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+
     @IBOutlet weak var imgVUser : UIImageView!
     @IBOutlet weak var vWimgUser : UIView!
     @IBOutlet weak var lblUserName : UILabel!
@@ -22,9 +22,9 @@ class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
     @IBOutlet weak var btnComment : UIButton!
     @IBOutlet weak var collView : UICollectionView!
     var arrImage : Array<Any>?
-    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
         imgVUser.layer.cornerRadius = imgVUser.CViewWidth / 2
         imgVUser.layer.masksToBounds = true
         
@@ -34,14 +34,8 @@ class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
         vWimgUser.layer.borderWidth = 2
         
         collView.register(UINib(nibName: "ImageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ImageCollectionViewCell")
-        
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     // MARK: -
     // MARK: - Configure cell
     
@@ -69,7 +63,7 @@ class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         let cell = collView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as! ImageCollectionViewCell
-    
+        
         cell.imgV.image = UIImage(named: (arrImage?[indexPath.row] as! String))
         return cell
     }

@@ -65,11 +65,15 @@ class SuperViewController: UIViewController {
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = false
-        
+        self.navigationController?.navigationBar.barTintColor = CColorTheme_760AFF
+        self.navigationController?.navigationBar.isHidden = false
         if self.view.tag == 100
         {
             self.navigationController?.navigationBar.isTranslucent = true
+           // self.navigationController?.navigationBar.barTintColor = CRGBA(r: 0, g: 0, b: 0, a: 0.1)
+            self.navigationController?.navigationBar.isHidden = true
         }
+        
     }
     
     

@@ -8,7 +8,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -22,7 +21,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="443" id="KGk-i7-Jjw" customClass="ImageNewsTableViewCell" customModule="MyApp" customModuleProvider="target">
+        <tableViewCell multipleTouchEnabled="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="443" id="KGk-i7-Jjw" customClass="ImageNewsTableViewCell" customModule="MyApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="443"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -53,11 +52,12 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQs-KO-vB2">
-                        <rect key="frame" x="345" y="10" width="30" height="30"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQs-KO-vB2">
+                        <rect key="frame" x="345" y="10" width="30" height="25"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="30" id="VuF-y7-Dnn"/>
                         </constraints>
+                        <state key="normal" image="more"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="754" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSi-P8-aPt" customClass="GenericLabel" customModule="MyApp" customModuleProvider="target">
                         <rect key="frame" x="66" y="28.5" width="301" height="37"/>
@@ -67,18 +67,22 @@
                         <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1NA-Up-0Yb">
-                        <rect key="frame" x="0.0" y="126.5" width="375" height="200"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1NA-Up-0Yb">
+                        <rect key="frame" x="0.0" y="126.5" width="375" height="211"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="1NA-Up-0Yb" secondAttribute="height" multiplier="15:8" id="qCE-Kw-Ig7"/>
+                            <constraint firstAttribute="width" secondItem="1NA-Up-0Yb" secondAttribute="height" multiplier="16:9" id="qCE-Kw-Ig7"/>
                         </constraints>
-                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pPl-zY-sY2">
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="pPl-zY-sY2">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="Epz-YD-WRq"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="drn-Q9-G0l"/>
+                        </connections>
                     </collectionView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="753" text="Ravi Shastri defends Ajinkya Rahane's omission from first two Tests" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz8-W6-4aA" customClass="GenericLabel" customModule="MyApp" customModuleProvider="target">
                         <rect key="frame" x="10" y="69.5" width="355" height="37"/>
@@ -87,7 +91,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAg-yg-o3D">
-                        <rect key="frame" x="10" y="334.5" width="355" height="56"/>
+                        <rect key="frame" x="10" y="345.5" width="355" height="45"/>
                         <string key="text">JOHANNESBURG: India coach Ravi Shastri on Monday defended the team management's decision to leave out Ajinkya Rahane from the first two Tests in South Africa, saying Rohit Sharma was the best option going by form.One of the most successful Indian batsmen overseas in recent years, vice-captain Rahane was not picked for the Tests in Cape Town and Centurion, with the Indian team management preferring to go with limited-overs specialist Sharma on "current form".</string>
                         <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="12"/>
                         <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
@@ -210,14 +214,15 @@
                     <constraint firstItem="iSi-P8-aPt" firstAttribute="leading" secondItem="IyV-fJ-bip" secondAttribute="leading" id="uP5-4M-M4Q"/>
                 </constraints>
             </tableViewCellContentView>
-            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="btnComment" destination="1q1-KR-tHc" id="JMU-Ki-BDw"/>
                 <outlet property="btnLikes" destination="tz5-QA-jbS" id="4bg-MA-60g"/>
                 <outlet property="btnViews" destination="vtj-a9-hxa" id="otP-Lk-tgE"/>
+                <outlet property="collView" destination="1NA-Up-0Yb" id="zuj-Dy-VCE"/>
                 <outlet property="imgVUser" destination="wED-4S-ST5" id="wVH-Wr-xLg"/>
                 <outlet property="lblDate" destination="yZ3-L7-RO6" id="XqH-vi-KfR"/>
                 <outlet property="lblDetails" destination="pAg-yg-o3D" id="1IB-n9-BKn"/>
+                <outlet property="lblHeadline" destination="Hz8-W6-4aA" id="TT1-Jz-Trp"/>
                 <outlet property="lblTagline" destination="iSi-P8-aPt" id="Qol-Ww-zG7"/>
                 <outlet property="lblUserName" destination="IyV-fJ-bip" id="yMx-P6-0On"/>
                 <outlet property="vWimgUser" destination="TPm-7F-TLx" id="F4I-r2-3fO"/>
@@ -230,6 +235,7 @@
         <image name="ishu.jpg" width="400" height="400"/>
         <image name="like_selected" width="25" height="25"/>
         <image name="like_unselected" width="25" height="25"/>
+        <image name="more" width="25" height="25"/>
         <image name="visible" width="25" height="25"/>
     </resources>
 </document>
