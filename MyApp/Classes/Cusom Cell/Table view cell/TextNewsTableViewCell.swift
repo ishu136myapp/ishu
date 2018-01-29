@@ -24,13 +24,13 @@ class TextNewsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        imgVUser.layer.cornerRadius = 21//CViewWidth(imgVUser) / 2
+        imgVUser.layer.cornerRadius = imgVUser.CViewWidth / 2
         imgVUser.layer.masksToBounds = true
         
-        vWimgUser.layer.cornerRadius = 25//CViewWidth(imgVUser) / 2
+        vWimgUser.layer.cornerRadius = vWimgUser.CViewWidth / 2
         vWimgUser.layer.masksToBounds = true
         vWimgUser.layer.borderColor = CColorTheme_760AFF.cgColor
-        vWimgUser.layer.borderWidth = 2
+        vWimgUser.layer.borderWidth = 1
         // Initialization code
     }
 

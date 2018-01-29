@@ -146,6 +146,9 @@ class HomeViewController: SuperViewController,UITableViewDelegate, UITableViewDa
     {
         
         let NewsDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "NewsDetailsViewController") as! NewsDetailsViewController
+//        self.present(UINavigationController(rootViewController: NewsDetailsVC), animated: true) {
+//
+//        }
         self.navigationController?.pushViewController(NewsDetailsVC, animated: true)
     }
 }

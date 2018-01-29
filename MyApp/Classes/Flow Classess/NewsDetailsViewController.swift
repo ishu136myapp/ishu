@@ -13,6 +13,7 @@ class NewsDetailsViewController: SuperViewController,UICollectionViewDelegate, U
     @IBOutlet var vWNavigation : UIView!
     @IBOutlet var collView : UICollectionView!
     
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

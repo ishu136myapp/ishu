@@ -38,11 +38,12 @@ enum FontType : Int {
     case Medium
     case Light
     case Thin
+    case Black
+    case SemiBold
 }
 
 func CFontRoboto(size: CGFloat, type: FontType) -> UIFont
 {
-    
     switch type
     {
     case .Regular:
@@ -59,9 +60,38 @@ func CFontRoboto(size: CGFloat, type: FontType) -> UIFont
         
     case .Thin:
         return UIFont.init(name: "Roboto-Thin", size: size)!
+        
+    default:
+        return UIFont.init(name: "Roboto-Regular", size: size)!
     }
 }
 
+func CFontMontSerrat(size: CGFloat, type: FontType) -> UIFont
+{
+    switch type
+    {
+    case .Regular:
+        return UIFont.init(name: "Montserrat-Regular", size: size)!
+        
+    case .Bold:
+        return UIFont.init(name: "Montserrat-Bold", size: size)!
+        
+    case .Medium:
+        return UIFont.init(name: "Montserrat-Medium", size: size)!
+        
+    case .Light:
+        return UIFont.init(name: "Montserrat-Light", size: size)!
+        
+    case .SemiBold:
+        return UIFont.init(name: "Montserrat-SemiBold", size: size)!
+        
+    case .Black:
+        return UIFont.init(name: "Montserrat-Black", size: size)!
+        
+    default:
+        return UIFont.init(name: "Montserrat-Regular", size: size)!
+    }
+}
 
 
 

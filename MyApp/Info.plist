@@ -50,6 +50,12 @@
 		<string>Roboto-Medium.ttf</string>
 		<string>Roboto-Regular.ttf</string>
 		<string>Roboto-Thin.ttf</string>
+		<string>Montserrat-Bold.ttf</string>
+		<string>Montserrat-Black.ttf</string>
+		<string>Montserrat-Light.ttf</string>
+		<string>Montserrat-Medium.ttf</string>
+		<string>Montserrat-Regular.ttf</string>
+		<string>Montserrat-SemiBold.ttf</string>
 	</array>
 </dict>
 </plist>

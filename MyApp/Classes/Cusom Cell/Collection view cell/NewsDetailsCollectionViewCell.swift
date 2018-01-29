@@ -21,6 +21,7 @@ class NewsDetailsCollectionViewCell: UICollectionViewCell,UICollectionViewDataSo
     @IBOutlet weak var btnLikes : UIButton!
     @IBOutlet weak var btnComment : UIButton!
     @IBOutlet weak var collView : UICollectionView!
+    @IBOutlet var pgControl : UIPageControl!
     var arrImage : Array<Any>?
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,7 +32,7 @@ class NewsDetailsCollectionViewCell: UICollectionViewCell,UICollectionViewDataSo
         vWimgUser.layer.cornerRadius = vWimgUser.CViewWidth / 2
         vWimgUser.layer.masksToBounds = true
         vWimgUser.layer.borderColor = CColorTheme_760AFF.cgColor
-        vWimgUser.layer.borderWidth = 2
+        vWimgUser.layer.borderWidth = 1
         
         collView.register(UINib(nibName: "ImageCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "ImageCollectionViewCell")
     }
@@ -44,6 +45,8 @@ class NewsDetailsCollectionViewCell: UICollectionViewCell,UICollectionViewDataSo
         
         arrImage = ["ajinkya-rahane_.jpg","ishu.jpg","ishu.jpg"]
         self.collView.reloadData()
+        pgControl.numberOfPages = arrImage?.count ?? 0
+        pgControl.currentPage = 0
         self.btnLikes.touchUpInside { (sender) in
             sender.isSelected = !sender.isSelected
         }
@@ -66,5 +69,15 @@ class NewsDetailsCollectionViewCell: UICollectionViewCell,UICollectionViewDataSo
         
         cell.imgV.image = UIImage(named: (arrImage?[indexPath.row] as! String))
         return cell
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView){
+        // Test the offset and calculate the current page after scrolling ends
+        let pageWidth:CGFloat = scrollView.frame.width
+        let currentPage:CGFloat = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
+        // Change the indicator
+        self.pgControl.currentPage = Int(currentPage);
+        // Change the text accordingly
+        
     }
 }

@@ -12,7 +12,6 @@
 		70046EBF2013E88400DBBB88 /* SearchNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70046EBE2013E88400DBBB88 /* SearchNewsViewController.swift */; };
 		70046EC12013E91B00DBBB88 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70046EC02013E91B00DBBB88 /* UploadViewController.swift */; };
 		70046EC32013E94900DBBB88 /* TagLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70046EC22013E94900DBBB88 /* TagLineViewController.swift */; };
-		70046EC52013E96A00DBBB88 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70046EC42013E96A00DBBB88 /* ProfileViewController.swift */; };
 		70046ECB2013EBEC00DBBB88 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70046EC62013EBEB00DBBB88 /* Roboto-Thin.ttf */; };
 		70046ECC2013EBEC00DBBB88 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70046EC72013EBEB00DBBB88 /* Roboto-Light.ttf */; };
 		70046ECD2013EBEC00DBBB88 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70046EC82013EBEB00DBBB88 /* Roboto-Medium.ttf */; };
@@ -37,7 +36,6 @@
 		7028111A201BAD4F00E55E1A /* TextNewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70281118201BAD4F00E55E1A /* TextNewsTableViewCell.xib */; };
 		7028111C201BB2F300E55E1A /* ajinkya-rahane_.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7028111B201BB2F300E55E1A /* ajinkya-rahane_.jpg */; };
 		7028111F201BDD5200E55E1A /* NewsDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7028111D201BDD5200E55E1A /* NewsDetailsCollectionViewCell.swift */; };
-		70281120201BDD5200E55E1A /* NewsDetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7028111E201BDD5200E55E1A /* NewsDetailsCollectionViewCell.xib */; };
 		70281148201BE95B00E55E1A /* MILoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70281123201BE95A00E55E1A /* MILoader.swift */; };
 		70281149201BE95B00E55E1A /* MIPopUpOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70281124201BE95A00E55E1A /* MIPopUpOverlay.swift */; };
 		7028114A201BE95B00E55E1A /* MIPopUpOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70281125201BE95A00E55E1A /* MIPopUpOverlay.xib */; };
@@ -71,6 +69,18 @@
 		70281166201BE95B00E55E1A /* MIKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70281144201BE95A00E55E1A /* MIKeyboardManager.swift */; };
 		70281167201BE95B00E55E1A /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70281146201BE95A00E55E1A /* Localization.swift */; };
 		70281168201BE95B00E55E1A /* MasterConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70281147201BE95A00E55E1A /* MasterConstant.swift */; };
+		703EF867201CF75700FEE3D7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703EF865201CF75700FEE3D7 /* ProfileTableViewCell.swift */; };
+		703EF868201CF75700FEE3D7 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 703EF866201CF75700FEE3D7 /* ProfileTableViewCell.xib */; };
+		703EF86F201D001000FEE3D7 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 703EF869201D000F00FEE3D7 /* Montserrat-SemiBold.ttf */; };
+		703EF870201D001000FEE3D7 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 703EF86A201D000F00FEE3D7 /* Montserrat-Regular.ttf */; };
+		703EF871201D001000FEE3D7 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 703EF86B201D000F00FEE3D7 /* Montserrat-Bold.ttf */; };
+		703EF872201D001000FEE3D7 /* Montserrat-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 703EF86C201D000F00FEE3D7 /* Montserrat-Black.ttf */; };
+		703EF873201D001000FEE3D7 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 703EF86D201D001000FEE3D7 /* Montserrat-Light.ttf */; };
+		703EF874201D001000FEE3D7 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 703EF86E201D001000FEE3D7 /* Montserrat-Medium.ttf */; };
+		703EF876201D0D4E00FEE3D7 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703EF875201D0D4E00FEE3D7 /* AccountViewController.swift */; };
+		703EF87C201F747F00FEE3D7 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703EF87B201F747F00FEE3D7 /* SettingsViewController.swift */; };
+		703EF87F201F77AB00FEE3D7 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703EF87D201F77AB00FEE3D7 /* SettingsTableViewCell.swift */; };
+		703EF880201F77AB00FEE3D7 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 703EF87E201F77AB00FEE3D7 /* SettingsTableViewCell.xib */; };
 		709D8EE52013F0BE00764F4E /* NewsDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709D8EE42013F0BE00764F4E /* NewsDetailsViewController.swift */; };
 		709D8F282013F62000764F4E /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709D8F252013F62000764F4E /* APIRequest.swift */; };
 		709D8F292013F62000764F4E /* ApplicationConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709D8F262013F62000764F4E /* ApplicationConstant.swift */; };
@@ -83,7 +93,6 @@
 		70046EBE2013E88400DBBB88 /* SearchNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNewsViewController.swift; sourceTree = "<group>"; };
 		70046EC02013E91B00DBBB88 /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		70046EC22013E94900DBBB88 /* TagLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLineViewController.swift; sourceTree = "<group>"; };
-		70046EC42013E96A00DBBB88 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		70046EC62013EBEB00DBBB88 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		70046EC72013EBEB00DBBB88 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		70046EC82013EBEB00DBBB88 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
@@ -110,7 +119,6 @@
 		70281118201BAD4F00E55E1A /* TextNewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextNewsTableViewCell.xib; sourceTree = "<group>"; };
 		7028111B201BB2F300E55E1A /* ajinkya-rahane_.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ajinkya-rahane_.jpg"; sourceTree = "<group>"; };
 		7028111D201BDD5200E55E1A /* NewsDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
-		7028111E201BDD5200E55E1A /* NewsDetailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDetailsCollectionViewCell.xib; sourceTree = "<group>"; };
 		70281123201BE95A00E55E1A /* MILoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MILoader.swift; sourceTree = "<group>"; };
 		70281124201BE95A00E55E1A /* MIPopUpOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIPopUpOverlay.swift; sourceTree = "<group>"; };
 		70281125201BE95A00E55E1A /* MIPopUpOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MIPopUpOverlay.xib; sourceTree = "<group>"; };
@@ -144,6 +152,18 @@
 		70281144201BE95A00E55E1A /* MIKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIKeyboardManager.swift; sourceTree = "<group>"; };
 		70281146201BE95A00E55E1A /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		70281147201BE95A00E55E1A /* MasterConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterConstant.swift; sourceTree = "<group>"; };
+		703EF865201CF75700FEE3D7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		703EF866201CF75700FEE3D7 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		703EF869201D000F00FEE3D7 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		703EF86A201D000F00FEE3D7 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		703EF86B201D000F00FEE3D7 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		703EF86C201D000F00FEE3D7 /* Montserrat-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Black.ttf"; sourceTree = "<group>"; };
+		703EF86D201D001000FEE3D7 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		703EF86E201D001000FEE3D7 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		703EF875201D0D4E00FEE3D7 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		703EF87B201F747F00FEE3D7 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		703EF87D201F77AB00FEE3D7 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		703EF87E201F77AB00FEE3D7 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
 		709D8EE42013F0BE00764F4E /* NewsDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewController.swift; sourceTree = "<group>"; };
 		709D8F252013F62000764F4E /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		709D8F262013F62000764F4E /* ApplicationConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationConstant.swift; sourceTree = "<group>"; };
@@ -180,7 +200,7 @@
 				70046EBE2013E88400DBBB88 /* SearchNewsViewController.swift */,
 				70046EC02013E91B00DBBB88 /* UploadViewController.swift */,
 				70046EC22013E94900DBBB88 /* TagLineViewController.swift */,
-				70046EC42013E96A00DBBB88 /* ProfileViewController.swift */,
+				703EF875201D0D4E00FEE3D7 /* AccountViewController.swift */,
 			);
 			path = "Tab Bar Classes";
 			sourceTree = "<group>";
@@ -193,6 +213,12 @@
 				70046EC82013EBEB00DBBB88 /* Roboto-Medium.ttf */,
 				70046ECA2013EBEC00DBBB88 /* Roboto-Regular.ttf */,
 				70046EC62013EBEB00DBBB88 /* Roboto-Thin.ttf */,
+				703EF86C201D000F00FEE3D7 /* Montserrat-Black.ttf */,
+				703EF86B201D000F00FEE3D7 /* Montserrat-Bold.ttf */,
+				703EF86D201D001000FEE3D7 /* Montserrat-Light.ttf */,
+				703EF86E201D001000FEE3D7 /* Montserrat-Medium.ttf */,
+				703EF86A201D000F00FEE3D7 /* Montserrat-Regular.ttf */,
+				703EF869201D000F00FEE3D7 /* Montserrat-SemiBold.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -213,6 +239,10 @@
 				701DC9AC20164F710020103D /* ImageNewsTableViewCell.xib */,
 				70281117201BAD4F00E55E1A /* TextNewsTableViewCell.swift */,
 				70281118201BAD4F00E55E1A /* TextNewsTableViewCell.xib */,
+				703EF865201CF75700FEE3D7 /* ProfileTableViewCell.swift */,
+				703EF866201CF75700FEE3D7 /* ProfileTableViewCell.xib */,
+				703EF87D201F77AB00FEE3D7 /* SettingsTableViewCell.swift */,
+				703EF87E201F77AB00FEE3D7 /* SettingsTableViewCell.xib */,
 			);
 			path = "Table view cell";
 			sourceTree = "<group>";
@@ -278,7 +308,6 @@
 				702810CA201BA38300E55E1A /* ImageCollectionViewCell.swift */,
 				702810CB201BA38300E55E1A /* ImageCollectionViewCell.xib */,
 				7028111D201BDD5200E55E1A /* NewsDetailsCollectionViewCell.swift */,
-				7028111E201BDD5200E55E1A /* NewsDetailsCollectionViewCell.xib */,
 			);
 			path = "Collection view cell";
 			sourceTree = "<group>";
@@ -375,6 +404,7 @@
 			isa = PBXGroup;
 			children = (
 				709D8EE42013F0BE00764F4E /* NewsDetailsViewController.swift */,
+				703EF87B201F747F00FEE3D7 /* SettingsViewController.swift */,
 			);
 			path = "Flow Classess";
 			sourceTree = "<group>";
@@ -448,21 +478,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				703EF873201D001000FEE3D7 /* Montserrat-Light.ttf in Resources */,
 				7023856920124BB90070A97C /* LaunchScreen.storyboard in Resources */,
 				7023856620124BB90070A97C /* Assets.xcassets in Resources */,
+				703EF870201D001000FEE3D7 /* Montserrat-Regular.ttf in Resources */,
 				7028111C201BB2F300E55E1A /* ajinkya-rahane_.jpg in Resources */,
 				701DC9AE20164F720020103D /* ImageNewsTableViewCell.xib in Resources */,
 				70046ECC2013EBEC00DBBB88 /* Roboto-Light.ttf in Resources */,
 				7028114A201BE95B00E55E1A /* MIPopUpOverlay.xib in Resources */,
 				70046ECD2013EBEC00DBBB88 /* Roboto-Medium.ttf in Resources */,
 				7023856420124BB90070A97C /* Main.storyboard in Resources */,
+				703EF874201D001000FEE3D7 /* Montserrat-Medium.ttf in Resources */,
 				70046ECB2013EBEC00DBBB88 /* Roboto-Thin.ttf in Resources */,
-				70281120201BDD5200E55E1A /* NewsDetailsCollectionViewCell.xib in Resources */,
 				70046ECF2013EBEC00DBBB88 /* Roboto-Regular.ttf in Resources */,
+				703EF880201F77AB00FEE3D7 /* SettingsTableViewCell.xib in Resources */,
 				70046ECE2013EBEC00DBBB88 /* Roboto-Bold.ttf in Resources */,
+				703EF872201D001000FEE3D7 /* Montserrat-Black.ttf in Resources */,
 				702810CD201BA38300E55E1A /* ImageCollectionViewCell.xib in Resources */,
 				701DC9C0201659D40020103D /* ishu.jpg in Resources */,
+				703EF871201D001000FEE3D7 /* Montserrat-Bold.ttf in Resources */,
 				7028111A201BAD4F00E55E1A /* TextNewsTableViewCell.xib in Resources */,
+				703EF86F201D001000FEE3D7 /* Montserrat-SemiBold.ttf in Resources */,
+				703EF868201CF75700FEE3D7 /* ProfileTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,7 +513,10 @@
 				70281148201BE95B00E55E1A /* MILoader.swift in Sources */,
 				7028115B201BE95B00E55E1A /* ExtensionUIButton.swift in Sources */,
 				7028114E201BE95B00E55E1A /* CoreDataContext+Extension.swift in Sources */,
+				703EF867201CF75700FEE3D7 /* ProfileTableViewCell.swift in Sources */,
 				701DC9BD201653360020103D /* GenericView.swift in Sources */,
+				703EF87F201F77AB00FEE3D7 /* SettingsTableViewCell.swift in Sources */,
+				703EF87C201F747F00FEE3D7 /* SettingsViewController.swift in Sources */,
 				7028115A201BE95B00E55E1A /* ExtensionUIBarButtonItem.swift in Sources */,
 				7028114F201BE95B00E55E1A /* CoreDataObject+Extension.swift in Sources */,
 				70281168201BE95B00E55E1A /* MasterConstant.swift in Sources */,
@@ -493,6 +533,7 @@
 				70281151201BE95B00E55E1A /* ExetensionFloat.swift in Sources */,
 				7028115D201BE95B00E55E1A /* ExtensionUIImage.swift in Sources */,
 				70281167201BE95B00E55E1A /* Localization.swift in Sources */,
+				703EF876201D0D4E00FEE3D7 /* AccountViewController.swift in Sources */,
 				70281162201BE95B00E55E1A /* ExtensionUITextView.swift in Sources */,
 				70281165201BE95B00E55E1A /* ExtensionURL.swift in Sources */,
 				701DC9B9201653360020103D /* GenericImageView.swift in Sources */,
@@ -509,7 +550,6 @@
 				70281159201BE95B00E55E1A /* ExtensionUIApplication.swift in Sources */,
 				7028114C201BE95B00E55E1A /* AutoLayout.swift in Sources */,
 				7028114D201BE95B00E55E1A /* CoreData.swift in Sources */,
-				70046EC52013E96A00DBBB88 /* ProfileViewController.swift in Sources */,
 				70281164201BE95B00E55E1A /* ExtensionUIViewController.swift in Sources */,
 				70046EC12013E91B00DBBB88 /* UploadViewController.swift in Sources */,
 				701DC9BC201653360020103D /* GenericTextView.swift in Sources */,
