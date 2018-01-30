@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="51" id="KGk-i7-Jjw" customClass="TagLineTableViewCell" customModule="MyApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="India" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbx-mK-SGd">
+                        <rect key="frame" x="16" y="8" width="297" height="18.5"/>
+                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdo-b8-RR6">
+                        <rect key="frame" x="317" y="0.0" width="50" height="50.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="9uH-WF-Bec"/>
+                            <constraint firstAttribute="width" secondItem="Tdo-b8-RR6" secondAttribute="height" multiplier="1:1" id="XgO-P2-MXx"/>
+                        </constraints>
+                        <state key="normal" image="bookmark_unselected"/>
+                        <state key="selected" image="bookmark_selected"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100k People Bookmark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3y-UK-oUd">
+                        <rect key="frame" x="16" y="26.5" width="297" height="16"/>
+                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="f3y-UK-oUd" firstAttribute="leading" secondItem="Wbx-mK-SGd" secondAttribute="leading" id="4QC-zR-EIO"/>
+                    <constraint firstAttribute="bottom" secondItem="f3y-UK-oUd" secondAttribute="bottom" constant="8" id="Afp-mc-hrH"/>
+                    <constraint firstItem="f3y-UK-oUd" firstAttribute="top" secondItem="Wbx-mK-SGd" secondAttribute="bottom" id="CWU-Kw-QIT"/>
+                    <constraint firstItem="Tdo-b8-RR6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aE5-fi-Y1b"/>
+                    <constraint firstItem="Tdo-b8-RR6" firstAttribute="leading" secondItem="Wbx-mK-SGd" secondAttribute="trailing" constant="4" id="asa-hf-IVT"/>
+                    <constraint firstItem="Wbx-mK-SGd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="jLV-fK-wkB"/>
+                    <constraint firstItem="Wbx-mK-SGd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="rkc-jo-zAf"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Tdo-b8-RR6" secondAttribute="bottom" id="sfl-Df-dlX"/>
+                    <constraint firstItem="Tdo-b8-RR6" firstAttribute="leading" secondItem="f3y-UK-oUd" secondAttribute="trailing" constant="4" id="tnd-Yt-MjF"/>
+                    <constraint firstAttribute="trailing" secondItem="Tdo-b8-RR6" secondAttribute="trailing" constant="8" id="zkH-Af-6G8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnBookMark" destination="Tdo-b8-RR6" id="5By-q3-Pj1"/>
+                <outlet property="lblPeople" destination="f3y-UK-oUd" id="sNp-KX-MxW"/>
+                <outlet property="lblTitle" destination="Wbx-mK-SGd" id="WFs-w7-s6n"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="75.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bookmark_selected" width="25" height="25"/>
+        <image name="bookmark_unselected" width="25" height="25"/>
+    </resources>
+</document>

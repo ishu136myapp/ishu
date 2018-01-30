@@ -69,6 +69,9 @@
 		70281166201BE95B00E55E1A /* MIKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70281144201BE95A00E55E1A /* MIKeyboardManager.swift */; };
 		70281167201BE95B00E55E1A /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70281146201BE95A00E55E1A /* Localization.swift */; };
 		70281168201BE95B00E55E1A /* MasterConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70281147201BE95A00E55E1A /* MasterConstant.swift */; };
+		702E21E22020D70A00FDCEB9 /* TagLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E21E02020D70A00FDCEB9 /* TagLineTableViewCell.swift */; };
+		702E21E32020D70A00FDCEB9 /* TagLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 702E21E12020D70A00FDCEB9 /* TagLineTableViewCell.xib */; };
+		702E21E52020F2A400FDCEB9 /* BookmarkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E21E42020F2A400FDCEB9 /* BookmarkDetailsViewController.swift */; };
 		703EF867201CF75700FEE3D7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703EF865201CF75700FEE3D7 /* ProfileTableViewCell.swift */; };
 		703EF868201CF75700FEE3D7 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 703EF866201CF75700FEE3D7 /* ProfileTableViewCell.xib */; };
 		703EF86F201D001000FEE3D7 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 703EF869201D000F00FEE3D7 /* Montserrat-SemiBold.ttf */; };
@@ -152,6 +155,9 @@
 		70281144201BE95A00E55E1A /* MIKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIKeyboardManager.swift; sourceTree = "<group>"; };
 		70281146201BE95A00E55E1A /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		70281147201BE95A00E55E1A /* MasterConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterConstant.swift; sourceTree = "<group>"; };
+		702E21E02020D70A00FDCEB9 /* TagLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLineTableViewCell.swift; sourceTree = "<group>"; };
+		702E21E12020D70A00FDCEB9 /* TagLineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagLineTableViewCell.xib; sourceTree = "<group>"; };
+		702E21E42020F2A400FDCEB9 /* BookmarkDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkDetailsViewController.swift; sourceTree = "<group>"; };
 		703EF865201CF75700FEE3D7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		703EF866201CF75700FEE3D7 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		703EF869201D000F00FEE3D7 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -243,6 +249,8 @@
 				703EF866201CF75700FEE3D7 /* ProfileTableViewCell.xib */,
 				703EF87D201F77AB00FEE3D7 /* SettingsTableViewCell.swift */,
 				703EF87E201F77AB00FEE3D7 /* SettingsTableViewCell.xib */,
+				702E21E02020D70A00FDCEB9 /* TagLineTableViewCell.swift */,
+				702E21E12020D70A00FDCEB9 /* TagLineTableViewCell.xib */,
 			);
 			path = "Table view cell";
 			sourceTree = "<group>";
@@ -405,6 +413,7 @@
 			children = (
 				709D8EE42013F0BE00764F4E /* NewsDetailsViewController.swift */,
 				703EF87B201F747F00FEE3D7 /* SettingsViewController.swift */,
+				702E21E42020F2A400FDCEB9 /* BookmarkDetailsViewController.swift */,
 			);
 			path = "Flow Classess";
 			sourceTree = "<group>";
@@ -482,6 +491,7 @@
 				7023856920124BB90070A97C /* LaunchScreen.storyboard in Resources */,
 				7023856620124BB90070A97C /* Assets.xcassets in Resources */,
 				703EF870201D001000FEE3D7 /* Montserrat-Regular.ttf in Resources */,
+				702E21E32020D70A00FDCEB9 /* TagLineTableViewCell.xib in Resources */,
 				7028111C201BB2F300E55E1A /* ajinkya-rahane_.jpg in Resources */,
 				701DC9AE20164F720020103D /* ImageNewsTableViewCell.xib in Resources */,
 				70046ECC2013EBEC00DBBB88 /* Roboto-Light.ttf in Resources */,
@@ -521,6 +531,7 @@
 				7028114F201BE95B00E55E1A /* CoreDataObject+Extension.swift in Sources */,
 				70281168201BE95B00E55E1A /* MasterConstant.swift in Sources */,
 				70281163201BE95B00E55E1A /* ExtensionUIView.swift in Sources */,
+				702E21E22020D70A00FDCEB9 /* TagLineTableViewCell.swift in Sources */,
 				70281160201BE95B00E55E1A /* ExtensionUIResponder.swift in Sources */,
 				70046E682013E0DF00DBBB88 /* SuperViewController.swift in Sources */,
 				702810CC201BA38300E55E1A /* ImageCollectionViewCell.swift in Sources */,
@@ -548,6 +559,7 @@
 				709D8F2A2013F62000764F4E /* MessagesConstant.swift in Sources */,
 				70046EC32013E94900DBBB88 /* TagLineViewController.swift in Sources */,
 				70281159201BE95B00E55E1A /* ExtensionUIApplication.swift in Sources */,
+				702E21E52020F2A400FDCEB9 /* BookmarkDetailsViewController.swift in Sources */,
 				7028114C201BE95B00E55E1A /* AutoLayout.swift in Sources */,
 				7028114D201BE95B00E55E1A /* CoreData.swift in Sources */,
 				70281164201BE95B00E55E1A /* ExtensionUIViewController.swift in Sources */,
