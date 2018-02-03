@@ -84,7 +84,18 @@ class AccountViewController: SuperViewController,UITableViewDelegate, UITableVie
         
     }
     
-
+    @IBAction func btnLikedClicked(sender : UIButton)
+    {
+        
+    }
+    @IBAction func btnTagsClicked(sender : UIButton)
+    {
+        
+    }
+    @IBAction func btnBookMarkClicked(sender : UIButton)
+    {
+        
+    }
     // MARK: -
     // MARK: - UITable view Data Source and Delegate
     

@@ -37,10 +37,7 @@ class NewsDetailsViewController: SuperViewController,UICollectionViewDelegate, U
     // MARK: -
     // MARK: - Action Event
     
-    @IBAction func btnBackClicked(_ sender : UIButton)
-    {
-        self.navigationController?.popViewController(animated: true)
-    }
+    
     
     // MARK: -
     // MARK: - Collection view data source and delegate

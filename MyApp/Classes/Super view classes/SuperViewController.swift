@@ -82,7 +82,10 @@ class SuperViewController: UIViewController {
         UIApplication.shared.sendAction(#selector(self.resignFirstResponder), to: nil, from: nil, for: nil)
     }
     
-    
+    @IBAction func btnBackClicked(_ sender : UIButton)
+    {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     // MARK:  -
     // MARK: - Helper Method

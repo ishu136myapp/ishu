@@ -118,7 +118,7 @@ class TagLineViewController: SuperViewController, UITableViewDelegate, UITableVi
     {
         let dict = arrBookmark[indexPath.row] as! [String : Any]
         let BookmarkDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "BookmarkDetailsViewController") as! BookmarkDetailsViewController
-        BookmarkDetailsVC.title = "#" + dict.valueForString(key: "title")
+        BookmarkDetailsVC.iObject = "#" + dict.valueForString(key: "title")
         self.navigationController?.pushViewController(BookmarkDetailsVC, animated: true)
     }
     
