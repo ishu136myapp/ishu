@@ -10,7 +10,7 @@ import Foundation
 
 import UIKit
 
-let CColorTheme_760AFF = CRGB(r: 118, g: 10, b: 225)
+let CColorTheme_760AFF = CRGB(r: 121, g: 68, b: 225)
 
 let CColorBlack_515253 = CRGB(r: 81, g: 82, b: 83)
 let CColorWhite_FFFFFF = CRGB(r: 255, g: 255, b: 255)

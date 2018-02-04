@@ -17,6 +17,7 @@ class SuperViewController: UIViewController {
     
     var iObject : Any!
     var touchUpInsideViewClicked: (() -> Void)? = nil
+    @IBOutlet var searchBar : UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -66,6 +67,8 @@ class SuperViewController: UIViewController {
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.barTintColor = CColorTheme_760AFF
+
+        self.navigationController?.navigationBar.tintColor = CColorTheme_760AFF
         self.navigationController?.navigationBar.isHidden = false
         if self.view.tag == 100
         {
@@ -76,7 +79,20 @@ class SuperViewController: UIViewController {
         
     }
     
-    
+    func configureSearchBar()
+    {
+        if let textfield = searchBar.value(forKey: "searchField") as? UITextField
+        {
+            textfield.textColor = UIColor.black
+            textfield.font = CFontRoboto(size: 15, type: .Regular)
+            if let backgroundview = textfield.subviews.first
+            {
+                // Rounded corner
+                backgroundview.layer.cornerRadius = 18
+                backgroundview.clipsToBounds = true
+            }
+        }
+    }
     func resignKeyboard()
     {
         UIApplication.shared.sendAction(#selector(self.resignFirstResponder), to: nil, from: nil, for: nil)

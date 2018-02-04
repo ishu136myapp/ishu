@@ -28,6 +28,7 @@ class TagLineViewController: SuperViewController, UITableViewDelegate, UITableVi
     // MARK: - General Method
     func initialize()
     {
+        self.configureSearchBar()
         arrBookmark = [["title":"India",
                         "follower":"10k",
                         "isBookmark":"1"],

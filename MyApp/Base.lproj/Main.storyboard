@@ -59,7 +59,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="arrow_back" id="KF5-CC-IwQ">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.46274509800000002" green="0.039215686270000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.47450980392156861" green="0.26666666666666666" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -172,6 +172,9 @@
                                                                                         <constraint firstItem="SE0-Xf-Oq8" firstAttribute="top" secondItem="Lxl-Mb-hoI" secondAttribute="top" constant="2" id="zhX-at-1xg"/>
                                                                                     </constraints>
                                                                                 </view>
+                                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohi-FQ-4MV">
+                                                                                    <rect key="frame" x="10" y="20" width="42" height="42"/>
+                                                                                </button>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="760" text="Ishwar lal Janwa " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CG2-8c-b9T" customClass="GenericLabel" customModule="MyApp" customModuleProvider="target">
                                                                                     <rect key="frame" x="60" y="20" width="94" height="16"/>
                                                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
@@ -299,6 +302,7 @@ Rai also urged former greats like Sachin Tendulkar and Kapil Dev to get into cri
                                                                                 <constraint firstItem="QJb-XL-tTW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7tI-Px-Nsw" secondAttribute="bottom" constant="4" id="52u-LH-wC4"/>
                                                                                 <constraint firstItem="QJb-XL-tTW" firstAttribute="top" secondItem="Lxl-Mb-hoI" secondAttribute="bottom" priority="750" constant="2" id="5BA-DN-TH7"/>
                                                                                 <constraint firstItem="Dam-H4-xWz" firstAttribute="top" secondItem="oZL-t4-Q03" secondAttribute="bottom" constant="10" id="BPA-ay-R3W"/>
+                                                                                <constraint firstItem="ohi-FQ-4MV" firstAttribute="bottom" secondItem="Lxl-Mb-hoI" secondAttribute="bottom" id="D6a-fU-R0h"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="8cb-FH-aI3" secondAttribute="trailing" constant="10" id="DRZ-oZ-ZpW"/>
                                                                                 <constraint firstItem="8cb-FH-aI3" firstAttribute="top" secondItem="QJb-XL-tTW" secondAttribute="bottom" id="EDr-LR-YR8"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="oZL-t4-Q03" secondAttribute="trailing" constant="10" id="HMl-7V-Yxi"/>
@@ -312,12 +316,15 @@ Rai also urged former greats like Sachin Tendulkar and Kapil Dev to get into cri
                                                                                 <constraint firstItem="oZL-t4-Q03" firstAttribute="leading" secondItem="yiN-xa-YDL" secondAttribute="leading" constant="10" id="cV4-AX-7Ts"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="7tI-Px-Nsw" secondAttribute="trailing" constant="8" id="eLD-aG-AyF"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="uAD-wk-xPi" secondAttribute="trailing" constant="10" id="hdw-fO-Dru"/>
+                                                                                <constraint firstItem="ohi-FQ-4MV" firstAttribute="top" secondItem="Lxl-Mb-hoI" secondAttribute="top" id="jCF-Rb-lnX"/>
                                                                                 <constraint firstItem="Lxl-Mb-hoI" firstAttribute="top" secondItem="yiN-xa-YDL" secondAttribute="top" constant="20" id="nTe-gK-xUk"/>
                                                                                 <constraint firstItem="Dam-H4-xWz" firstAttribute="leading" secondItem="yiN-xa-YDL" secondAttribute="leading" id="nm4-S1-6k0"/>
                                                                                 <constraint firstItem="CG2-8c-b9T" firstAttribute="leading" secondItem="SE0-Xf-Oq8" secondAttribute="trailing" constant="10" id="pta-vR-kN8"/>
                                                                                 <constraint firstItem="QJb-XL-tTW" firstAttribute="leading" secondItem="yiN-xa-YDL" secondAttribute="leading" constant="10" id="q7i-t9-ZW4"/>
                                                                                 <constraint firstItem="uAD-wk-xPi" firstAttribute="top" secondItem="yiN-xa-YDL" secondAttribute="top" id="sMq-66-Wy6"/>
                                                                                 <constraint firstAttribute="trailing" secondItem="QJb-XL-tTW" secondAttribute="trailing" constant="10" id="yaX-iP-vKN"/>
+                                                                                <constraint firstItem="ohi-FQ-4MV" firstAttribute="leading" secondItem="Lxl-Mb-hoI" secondAttribute="leading" id="zid-Xa-exs"/>
+                                                                                <constraint firstItem="ohi-FQ-4MV" firstAttribute="trailing" secondItem="Lxl-Mb-hoI" secondAttribute="trailing" id="ztu-0z-XFt"/>
                                                                             </constraints>
                                                                         </view>
                                                                     </subviews>
@@ -355,6 +362,7 @@ Rai also urged former greats like Sachin Tendulkar and Kapil Dev to get into cri
                                                 <connections>
                                                     <outlet property="btnComment" destination="vOt-Ne-nSn" id="6zb-4b-7GG"/>
                                                     <outlet property="btnLikes" destination="S1M-O5-gnl" id="i1m-wX-Dxv"/>
+                                                    <outlet property="btnProfile" destination="ohi-FQ-4MV" id="OWQ-FU-ITa"/>
                                                     <outlet property="btnViews" destination="ReK-Sh-87r" id="elr-hm-KN7"/>
                                                     <outlet property="collView" destination="Ynf-7W-5Wx" id="lTb-yB-GkZ"/>
                                                     <outlet property="imgVUser" destination="SE0-Xf-Oq8" id="c6r-WO-0de"/>
@@ -416,7 +424,7 @@ Rai also urged former greats like Sachin Tendulkar and Kapil Dev to get into cri
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.46274509800000002" green="0.039215686270000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.47450980392156861" green="0.26666666666666666" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="mxQ-bC-wfX" firstAttribute="trailing" secondItem="sdi-NV-Ujk" secondAttribute="trailing" id="0y0-cG-aDV"/>
                             <constraint firstItem="mxQ-bC-wfX" firstAttribute="leading" secondItem="sdi-NV-Ujk" secondAttribute="leading" id="4ve-ED-eJw"/>
@@ -623,7 +631,7 @@ Rai also urged former greats like Sachin Tendulkar and Kapil Dev to get into cri
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.46274509800000002" green="0.039215686270000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.47450980392156861" green="0.26666666666666666" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MU6-ee-adt" firstAttribute="leading" secondItem="bQ3-us-b8e" secondAttribute="leading" id="96l-wp-jdd"/>
                             <constraint firstItem="MU6-ee-adt" firstAttribute="top" secondItem="bQ3-us-b8e" secondAttribute="top" id="BcF-ld-kf2"/>
@@ -824,7 +832,9 @@ Rai also urged former greats like Sachin Tendulkar and Kapil Dev to get into cri
                         <subviews>
                             <searchBar contentMode="redraw" placeholder="Search HashTag" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhx-G7-RMW">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
-                                <color key="barTintColor" red="0.46274509800000002" green="0.039215686270000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.46274509800000002" green="0.039215686270000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.47450980390000003" green="0.2666666667" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.47450980390000003" green="0.2666666667" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <offsetWrapper key="searchTextPositionAdjustment" horizontal="0.0" vertical="0.0"/>
                                 <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="search"/>
@@ -845,7 +855,7 @@ Rai also urged former greats like Sachin Tendulkar and Kapil Dev to get into cri
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.46274509800000002" green="0.039215686270000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.47450980392156861" green="0.26666666666666666" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="c4k-Ou-dES" firstAttribute="top" secondItem="Dhx-G7-RMW" secondAttribute="bottom" id="27J-eN-CW5"/>
                             <constraint firstItem="Dhx-G7-RMW" firstAttribute="trailing" secondItem="m5B-GM-IuF" secondAttribute="trailing" id="7qy-RS-g4j"/>
@@ -859,6 +869,7 @@ Rai also urged former greats like Sachin Tendulkar and Kapil Dev to get into cri
                     </view>
                     <navigationItem key="navigationItem" title="HashTag" id="wDS-AY-7t4"/>
                     <connections>
+                        <outlet property="searchBar" destination="Dhx-G7-RMW" id="h5R-Xw-Hft"/>
                         <outlet property="searchDisplayController" destination="7hC-2D-RzX" id="Xz4-bP-1Ix"/>
                         <outlet property="tblTag" destination="c4k-Ou-dES" id="NRs-Oc-To5"/>
                         <segue destination="o0Q-tF-yh6" kind="showDetail" id="PM5-vv-met"/>
@@ -1220,7 +1231,9 @@ Rai also urged former greats like Sachin Tendulkar and Kapil Dev to get into cri
                         <subviews>
                             <searchBar contentMode="redraw" placeholder="Search News" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mXH-6M-g4O">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
-                                <color key="barTintColor" red="0.46274509800000002" green="0.039215686270000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.47450980390000003" green="0.2666666667" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.47450980390000003" green="0.2666666667" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.47450980392156861" green="0.26666666666666666" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <offsetWrapper key="searchTextPositionAdjustment" horizontal="0.0" vertical="0.0"/>
                                 <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="search"/>
@@ -1229,15 +1242,89 @@ Rai also urged former greats like Sachin Tendulkar and Kapil Dev to get into cri
                                     <string>Title</string>
                                 </scopeButtonTitles>
                                 <connections>
-                                    <outlet property="delegate" destination="37k-Po-hgV" id="RXn-Tb-AkU"/>
+                                    <outlet property="delegate" destination="fdw-W1-ky3" id="pJe-jF-TPO"/>
                                 </connections>
                             </searchBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7A-YX-LTO">
                                 <rect key="frame" x="0.0" y="56" width="375" height="498"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gR6-bF-QKD">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="498"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="mdV-5w-rCw">
+                                            <size key="itemSize" width="175" height="125"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="8" minY="8" maxX="8" maxY="8"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SearchNewsCollectionViewCell" id="9Mj-Mp-7VK" customClass="SearchNewsCollectionViewCell" customModule="MyApp" customModuleProvider="target">
+                                                <rect key="frame" x="8" y="8" width="175" height="125"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="175" height="125"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rra-g9-7js">
+                                                            <rect key="frame" x="0.0" y="0.0" width="175" height="125"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="753" text="Ravi Shastri defends Ajinkya Rahane's omission from first two Tests" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuD-uU-hzx" customClass="GenericLabel" customModule="MyApp" customModuleProvider="target">
+                                                                    <rect key="frame" x="3" y="2" width="169" height="55.5"/>
+                                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W7b-wT-NIc">
+                                                                    <rect key="frame" x="3" y="57.5" width="169" height="64.5"/>
+                                                                    <string key="text">JOHANNESBURG: India coach Ravi Shastri on Monday defended the team management's decision to leave out Ajinkya Rahane from the first two Tests in South Africa, saying Rohit Sharma was the best option going by form.One of the most successful Indian batsmen overseas in recent years, vice-captain Rahane was not picked for the Tests in Cape Town and Centurion, with the Indian team management preferring to go with limited-overs specialist Sharma on current form.</string>
+                                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                                                    <color key="textColor" red="0.25098039220000001" green="0.25098039220000001" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="W7b-wT-NIc" secondAttribute="trailing" constant="3" id="0nu-su-O9t"/>
+                                                                <constraint firstAttribute="trailing" secondItem="CuD-uU-hzx" secondAttribute="trailing" constant="3" id="CfY-hY-re3"/>
+                                                                <constraint firstItem="W7b-wT-NIc" firstAttribute="leading" secondItem="rra-g9-7js" secondAttribute="leading" constant="3" id="D3w-hb-AaH"/>
+                                                                <constraint firstItem="CuD-uU-hzx" firstAttribute="top" secondItem="rra-g9-7js" secondAttribute="top" constant="2" id="Hoc-37-4K2"/>
+                                                                <constraint firstItem="CuD-uU-hzx" firstAttribute="leading" secondItem="rra-g9-7js" secondAttribute="leading" constant="3" id="L9P-tm-2f9"/>
+                                                                <constraint firstItem="W7b-wT-NIc" firstAttribute="top" secondItem="CuD-uU-hzx" secondAttribute="bottom" id="eP2-Mk-kQI"/>
+                                                                <constraint firstAttribute="bottom" secondItem="W7b-wT-NIc" secondAttribute="bottom" constant="3" id="gGy-jG-20J"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </view>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="rra-g9-7js" secondAttribute="trailing" id="3SQ-mY-hDU"/>
+                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rra-g9-7js" secondAttribute="bottom" id="7pp-MG-kxE"/>
+                                                    <constraint firstItem="rra-g9-7js" firstAttribute="leading" secondItem="9Mj-Mp-7VK" secondAttribute="leading" id="pJz-7V-nTZ"/>
+                                                    <constraint firstItem="rra-g9-7js" firstAttribute="top" secondItem="9Mj-Mp-7VK" secondAttribute="top" id="vdV-T5-Fpv"/>
+                                                </constraints>
+                                                <connections>
+                                                    <outlet property="lblDetails" destination="W7b-wT-NIc" id="1nz-eT-atl"/>
+                                                    <outlet property="lblHeadline" destination="CuD-uU-hzx" id="Mq0-C1-lbD"/>
+                                                    <outlet property="vWContent" destination="rra-g9-7js" id="C32-eK-ekL"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="fdw-W1-ky3" id="Ymw-6E-wcx"/>
+                                            <outlet property="delegate" destination="fdw-W1-ky3" id="vEK-kd-mK7"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="gR6-bF-QKD" firstAttribute="leading" secondItem="i7A-YX-LTO" secondAttribute="leading" id="2m9-Sc-DuM"/>
+                                    <constraint firstItem="gR6-bF-QKD" firstAttribute="top" secondItem="i7A-YX-LTO" secondAttribute="top" id="mU3-Hm-Ppi"/>
+                                    <constraint firstAttribute="bottom" secondItem="gR6-bF-QKD" secondAttribute="bottom" id="v8T-8F-jf6"/>
+                                    <constraint firstAttribute="trailing" secondItem="gR6-bF-QKD" secondAttribute="trailing" id="yni-VH-rZP"/>
+                                </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.46274509800000002" green="0.039215686270000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.47450980392156861" green="0.26666666666666666" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="P5A-Ue-4rZ" firstAttribute="trailing" secondItem="i7A-YX-LTO" secondAttribute="trailing" id="A6x-iZ-4cS"/>
                             <constraint firstItem="i7A-YX-LTO" firstAttribute="top" secondItem="mXH-6M-g4O" secondAttribute="bottom" id="PEo-E9-0d3"/>
@@ -1250,10 +1337,14 @@ Rai also urged former greats like Sachin Tendulkar and Kapil Dev to get into cri
                         <viewLayoutGuide key="safeArea" id="P5A-Ue-4rZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Search News" id="8do-xx-UBc"/>
+                    <connections>
+                        <outlet property="collView" destination="gR6-bF-QKD" id="9xF-Dx-vyy"/>
+                        <outlet property="searchBar" destination="mXH-6M-g4O" id="J5W-MX-2AO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ArA-lI-NDP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1122" y="-1148"/>
+            <point key="canvasLocation" x="-1122.4000000000001" y="-1148.2758620689656"/>
         </scene>
     </scenes>
     <resources>

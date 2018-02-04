@@ -20,6 +20,8 @@ class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
     @IBOutlet weak var btnViews : UIButton!
     @IBOutlet weak var btnLikes : UIButton!
     @IBOutlet weak var btnComment : UIButton!
+    @IBOutlet weak var btnProfile : UIButton!
+    @IBOutlet weak var btnOption : UIButton!
     @IBOutlet weak var collView : UICollectionView!
     @IBOutlet var pgControl : UIPageControl!
     var arrImage : Array<Any>?
@@ -56,8 +58,17 @@ class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
         self.btnLikes.touchUpInside { (sender) in
             sender.isSelected = !sender.isSelected
         }
+        
+        self.btnProfile.touchUpInside { (sender) in
+            
+            if let AccountVC = self.viewController?.storyboard?.instantiateViewController(withIdentifier: "AccountViewController") as? AccountViewController
+            {
+                self.viewController?.navigationController?.pushViewController(AccountVC, animated: true)
+
+            }
+            
+        }
     }
-    
     // MARK: -
     // MARK: - Collection view data source and delegate
     

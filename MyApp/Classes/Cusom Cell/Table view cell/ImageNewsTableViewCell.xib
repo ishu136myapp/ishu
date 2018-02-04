@@ -49,8 +49,11 @@
                             <constraint firstAttribute="bottom" secondItem="wED-4S-ST5" secondAttribute="bottom" constant="2" id="dJM-aE-1Cr"/>
                         </constraints>
                     </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMK-HO-8lD">
+                        <rect key="frame" x="10" y="10" width="42" height="42"/>
+                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="755" text="Ishwar lal Janwa " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyV-fJ-bip" customClass="GenericLabel" customModule="MyApp" customModuleProvider="target">
-                        <rect key="frame" x="60" y="10" width="94" height="16"/>
+                        <rect key="frame" x="60" y="10" width="92" height="14"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -63,7 +66,7 @@
                         <state key="normal" image="more"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="754" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSi-P8-aPt" customClass="GenericLabel" customModule="MyApp" customModuleProvider="target">
-                        <rect key="frame" x="60" y="26" width="285" height="32"/>
+                        <rect key="frame" x="60" y="24" width="285" height="28"/>
                         <string key="text">#India  #Rajasthan #Pratapgarh 
 #ChotiSadri #Bambori</string>
                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
@@ -71,7 +74,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1NA-Up-0Yb">
-                        <rect key="frame" x="0.0" y="119" width="375" height="211"/>
+                        <rect key="frame" x="0.0" y="109" width="375" height="211"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="1NA-Up-0Yb" secondAttribute="height" multiplier="16:9" id="qCE-Kw-Ig7"/>
@@ -88,25 +91,25 @@
                         </connections>
                     </collectionView>
                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="R9V-wp-JcY">
-                        <rect key="frame" x="160" y="298" width="55" height="37"/>
+                        <rect key="frame" x="160" y="288" width="55" height="37"/>
                         <color key="pageIndicatorTintColor" red="0.78823529411764703" green="0.78823529411764703" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="currentPageIndicatorTintColor" red="0.46274509800000002" green="0.039215686270000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </pageControl>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="753" text="Ravi Shastri defends Ajinkya Rahane's omission from first two Tests" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz8-W6-4aA" customClass="GenericLabel" customModule="MyApp" customModuleProvider="target">
-                        <rect key="frame" x="10" y="62" width="355" height="37"/>
+                        <rect key="frame" x="10" y="56" width="355" height="33"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAg-yg-o3D">
-                        <rect key="frame" x="10" y="338" width="355" height="52.5"/>
+                        <rect key="frame" x="10" y="328" width="355" height="56"/>
                         <string key="text">JOHANNESBURG: India coach Ravi Shastri on Monday defended the team management's decision to leave out Ajinkya Rahane from the first two Tests in South Africa, saying Rohit Sharma was the best option going by form.One of the most successful Indian batsmen overseas in recent years, vice-captain Rahane was not picked for the Tests in Cape Town and Centurion, with the Indian team management preferring to go with limited-overs specialist Sharma on "current form".</string>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                         <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 Jan 2018 11:33 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZ3-L7-RO6">
-                        <rect key="frame" x="10" y="99" width="97.5" height="20"/>
+                        <rect key="frame" x="10" y="89" width="101" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="Fnc-hE-LWI"/>
                         </constraints>
@@ -115,7 +118,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6g-f2-1x5">
-                        <rect key="frame" x="0.0" y="400.5" width="375" height="36"/>
+                        <rect key="frame" x="0.0" y="394" width="375" height="36"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtj-a9-hxa">
                                 <rect key="frame" x="10" y="0.0" width="36" height="36"/>
@@ -140,19 +143,19 @@
                                 <state key="normal" image="comment"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.1k" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ik5-v6-gMW">
-                                <rect key="frame" x="46" y="10.5" width="76.5" height="16"/>
+                                <rect key="frame" x="46" y="11.5" width="76.5" height="14"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10k" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Txf-qi-grb">
-                                <rect key="frame" x="158.5" y="10" width="86" height="16"/>
+                                <rect key="frame" x="158.5" y="11" width="86" height="14"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbx-hf-aPs">
-                                <rect key="frame" x="280.5" y="10.5" width="94.5" height="16"/>
+                                <rect key="frame" x="280.5" y="11.5" width="94.5" height="14"/>
                                 <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -182,7 +185,7 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YP3-vk-taO">
-                        <rect key="frame" x="0.0" y="436.5" width="375" height="6"/>
+                        <rect key="frame" x="0.0" y="430" width="375" height="6"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="6" id="8hp-Ax-VxS"/>
@@ -197,6 +200,7 @@
                     <constraint firstItem="vtj-a9-hxa" firstAttribute="leading" secondItem="pAg-yg-o3D" secondAttribute="leading" id="6lb-EM-Q9Q"/>
                     <constraint firstItem="yZ3-L7-RO6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8Pb-gp-9ch"/>
                     <constraint firstItem="gQs-KO-vB2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9hV-6l-mBr"/>
+                    <constraint firstItem="RMK-HO-8lD" firstAttribute="top" secondItem="TPm-7F-TLx" secondAttribute="top" id="FZp-vB-rFh"/>
                     <constraint firstAttribute="trailing" secondItem="n6g-f2-1x5" secondAttribute="trailing" id="Fom-p2-DOG"/>
                     <constraint firstItem="IyV-fJ-bip" firstAttribute="leading" secondItem="wED-4S-ST5" secondAttribute="trailing" constant="10" id="Go0-fW-H9k"/>
                     <constraint firstItem="1NA-Up-0Yb" firstAttribute="top" secondItem="yZ3-L7-RO6" secondAttribute="bottom" id="Ie0-Rc-D6E"/>
@@ -208,7 +212,9 @@
                     <constraint firstItem="YP3-vk-taO" firstAttribute="top" secondItem="n6g-f2-1x5" secondAttribute="bottom" id="PeS-nt-0t9"/>
                     <constraint firstItem="n6g-f2-1x5" firstAttribute="top" secondItem="pAg-yg-o3D" secondAttribute="bottom" constant="10" id="TCL-1v-CVA"/>
                     <constraint firstItem="1NA-Up-0Yb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="V0I-gO-WTv"/>
+                    <constraint firstItem="RMK-HO-8lD" firstAttribute="leading" secondItem="TPm-7F-TLx" secondAttribute="leading" id="V9s-Zv-jJP"/>
                     <constraint firstItem="gQs-KO-vB2" firstAttribute="leading" secondItem="iSi-P8-aPt" secondAttribute="trailing" id="VVC-Ne-Umz"/>
+                    <constraint firstItem="RMK-HO-8lD" firstAttribute="trailing" secondItem="TPm-7F-TLx" secondAttribute="trailing" id="YDB-1H-NY6"/>
                     <constraint firstItem="IyV-fJ-bip" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="a5r-qq-ArH"/>
                     <constraint firstItem="pAg-yg-o3D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="e7O-pf-MFt"/>
                     <constraint firstItem="YP3-vk-taO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="g2l-7i-ZGd"/>
@@ -216,6 +222,7 @@
                     <constraint firstItem="iSi-P8-aPt" firstAttribute="top" secondItem="IyV-fJ-bip" secondAttribute="bottom" id="kv1-eP-WAm"/>
                     <constraint firstAttribute="trailing" secondItem="pAg-yg-o3D" secondAttribute="trailing" constant="10" id="lA5-nH-2Et"/>
                     <constraint firstAttribute="trailing" secondItem="gQs-KO-vB2" secondAttribute="trailing" id="ok8-km-rUm"/>
+                    <constraint firstItem="RMK-HO-8lD" firstAttribute="bottom" secondItem="TPm-7F-TLx" secondAttribute="bottom" id="pkz-yT-CuJ"/>
                     <constraint firstItem="pAg-yg-o3D" firstAttribute="top" secondItem="1NA-Up-0Yb" secondAttribute="bottom" constant="8" id="r3u-u5-4Nw"/>
                     <constraint firstItem="n6g-f2-1x5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rsk-j6-mWO"/>
                     <constraint firstAttribute="trailing" secondItem="1NA-Up-0Yb" secondAttribute="trailing" id="uLI-J6-ftb"/>
@@ -227,6 +234,8 @@
             <connections>
                 <outlet property="btnComment" destination="1q1-KR-tHc" id="JMU-Ki-BDw"/>
                 <outlet property="btnLikes" destination="tz5-QA-jbS" id="4bg-MA-60g"/>
+                <outlet property="btnOption" destination="gQs-KO-vB2" id="rcZ-YW-CBR"/>
+                <outlet property="btnProfile" destination="RMK-HO-8lD" id="9VF-dN-peP"/>
                 <outlet property="btnViews" destination="vtj-a9-hxa" id="otP-Lk-tgE"/>
                 <outlet property="collView" destination="1NA-Up-0Yb" id="zuj-Dy-VCE"/>
                 <outlet property="imgVUser" destination="wED-4S-ST5" id="wVH-Wr-xLg"/>

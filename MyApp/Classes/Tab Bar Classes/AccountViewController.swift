@@ -51,7 +51,7 @@ class AccountViewController: SuperViewController,UITableViewDelegate, UITableVie
         btnEditProfile.layer.borderWidth = 1
         btnEditProfile.layer.borderColor = CColorGray_9B9B9B.cgColor
         //...
-        tblView.register(UINib(nibName: "ProfileTableViewCell", bundle: nil), forCellReuseIdentifier: "ProfileTableViewCell")
+        //tblView.register(UINib(nibName: "ProfileTableViewCell", bundle: nil), forCellReuseIdentifier: "ProfileTableViewCell")
         
         tblView.register(UINib(nibName: "ImageNewsTableViewCell", bundle: nil), forCellReuseIdentifier: "ImageNewsTableViewCell")
         tblView.register(UINib(nibName: "TextNewsTableViewCell", bundle: nil), forCellReuseIdentifier: "TextNewsTableViewCell")

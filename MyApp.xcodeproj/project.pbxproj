@@ -30,6 +30,7 @@
 		7023856420124BB90070A97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7023856220124BB90070A97C /* Main.storyboard */; };
 		7023856620124BB90070A97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7023856520124BB90070A97C /* Assets.xcassets */; };
 		7023856920124BB90070A97C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7023856720124BB90070A97C /* LaunchScreen.storyboard */; };
+		70252CDB20277A4B00E6E74A /* SearchNewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70252CDA20277A4B00E6E74A /* SearchNewsCollectionViewCell.swift */; };
 		702810CC201BA38300E55E1A /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702810CA201BA38300E55E1A /* ImageCollectionViewCell.swift */; };
 		702810CD201BA38300E55E1A /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 702810CB201BA38300E55E1A /* ImageCollectionViewCell.xib */; };
 		70281119201BAD4F00E55E1A /* TextNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70281117201BAD4F00E55E1A /* TextNewsTableViewCell.swift */; };
@@ -116,6 +117,7 @@
 		7023856520124BB90070A97C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7023856820124BB90070A97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7023856A20124BB90070A97C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70252CDA20277A4B00E6E74A /* SearchNewsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNewsCollectionViewCell.swift; sourceTree = "<group>"; };
 		702810CA201BA38300E55E1A /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		702810CB201BA38300E55E1A /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		70281117201BAD4F00E55E1A /* TextNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextNewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -316,6 +318,7 @@
 				702810CA201BA38300E55E1A /* ImageCollectionViewCell.swift */,
 				702810CB201BA38300E55E1A /* ImageCollectionViewCell.xib */,
 				7028111D201BDD5200E55E1A /* NewsDetailsCollectionViewCell.swift */,
+				70252CDA20277A4B00E6E74A /* SearchNewsCollectionViewCell.swift */,
 			);
 			path = "Collection view cell";
 			sourceTree = "<group>";
@@ -561,6 +564,7 @@
 				70281159201BE95B00E55E1A /* ExtensionUIApplication.swift in Sources */,
 				702E21E52020F2A400FDCEB9 /* BookmarkDetailsViewController.swift in Sources */,
 				7028114C201BE95B00E55E1A /* AutoLayout.swift in Sources */,
+				70252CDB20277A4B00E6E74A /* SearchNewsCollectionViewCell.swift in Sources */,
 				7028114D201BE95B00E55E1A /* CoreData.swift in Sources */,
 				70281164201BE95B00E55E1A /* ExtensionUIViewController.swift in Sources */,
 				70046EC12013E91B00DBBB88 /* UploadViewController.swift in Sources */,

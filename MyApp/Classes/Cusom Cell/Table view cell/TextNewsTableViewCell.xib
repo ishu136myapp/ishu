@@ -49,6 +49,9 @@
                             <constraint firstItem="4mH-8w-dOu" firstAttribute="leading" secondItem="e5a-4A-HGH" secondAttribute="leading" constant="2" id="voi-33-8Tz"/>
                         </constraints>
                     </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qe-gQ-vqM">
+                        <rect key="frame" x="10" y="10" width="42" height="42"/>
+                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="755" text="Ishwar lal Janwa " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y57-OW-wLd" customClass="GenericLabel" customModule="MyApp" customModuleProvider="target">
                         <rect key="frame" x="60" y="10" width="94" height="16"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
@@ -167,6 +170,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="8nk-Cq-l6q" firstAttribute="top" secondItem="CmR-gM-vO4" secondAttribute="bottom" id="06O-cW-qWg"/>
+                    <constraint firstItem="1qe-gQ-vqM" firstAttribute="trailing" secondItem="e5a-4A-HGH" secondAttribute="trailing" id="41A-Zg-3AP"/>
                     <constraint firstItem="DHu-t3-Qt3" firstAttribute="top" secondItem="cFF-sI-rpO" secondAttribute="bottom" id="4gm-yr-xhv"/>
                     <constraint firstAttribute="trailing" secondItem="8nk-Cq-l6q" secondAttribute="trailing" constant="10" id="5pP-4N-dJg"/>
                     <constraint firstItem="y57-OW-wLd" firstAttribute="leading" secondItem="4mH-8w-dOu" secondAttribute="trailing" constant="10" id="5wN-l4-f2r"/>
@@ -179,12 +183,15 @@
                     <constraint firstItem="Fyi-bH-sEj" firstAttribute="top" secondItem="e5a-4A-HGH" secondAttribute="bottom" priority="750" constant="2" id="WUR-dd-ncD"/>
                     <constraint firstItem="wFV-RD-95r" firstAttribute="leading" secondItem="8nk-Cq-l6q" secondAttribute="leading" id="Ykh-LI-Dag"/>
                     <constraint firstItem="aJr-h5-m8W" firstAttribute="top" secondItem="kBz-W6-MtO" secondAttribute="top" constant="10" id="Ypc-wc-hTH"/>
+                    <constraint firstItem="1qe-gQ-vqM" firstAttribute="top" secondItem="e5a-4A-HGH" secondAttribute="top" id="Z36-Fr-hKz"/>
                     <constraint firstItem="DHu-t3-Qt3" firstAttribute="leading" secondItem="kBz-W6-MtO" secondAttribute="leading" id="ZQI-LV-hQ4"/>
                     <constraint firstAttribute="trailing" secondItem="aJr-h5-m8W" secondAttribute="trailing" id="b5g-gL-2AY"/>
                     <constraint firstItem="cFF-sI-rpO" firstAttribute="leading" secondItem="kBz-W6-MtO" secondAttribute="leading" id="bUT-t2-50W"/>
                     <constraint firstItem="CmR-gM-vO4" firstAttribute="top" secondItem="Fyi-bH-sEj" secondAttribute="bottom" id="cRX-z1-5wJ"/>
                     <constraint firstItem="y57-OW-wLd" firstAttribute="top" secondItem="kBz-W6-MtO" secondAttribute="top" constant="10" id="eCE-2q-l68"/>
+                    <constraint firstItem="1qe-gQ-vqM" firstAttribute="bottom" secondItem="e5a-4A-HGH" secondAttribute="bottom" id="fCH-dZ-Qz3"/>
                     <constraint firstAttribute="trailing" secondItem="Fyi-bH-sEj" secondAttribute="trailing" constant="10" id="fDl-zp-NOZ"/>
+                    <constraint firstItem="1qe-gQ-vqM" firstAttribute="leading" secondItem="e5a-4A-HGH" secondAttribute="leading" id="jQg-Pm-qEn"/>
                     <constraint firstItem="AP5-Yz-Uwo" firstAttribute="top" secondItem="y57-OW-wLd" secondAttribute="bottom" id="kQ2-Ix-hB8"/>
                     <constraint firstItem="AP5-Yz-Uwo" firstAttribute="leading" secondItem="y57-OW-wLd" secondAttribute="leading" id="oCN-TI-EEW"/>
                     <constraint firstAttribute="trailing" secondItem="DHu-t3-Qt3" secondAttribute="trailing" id="r5z-sd-xZ4"/>
@@ -198,6 +205,8 @@
             <connections>
                 <outlet property="btnComment" destination="CaG-ms-jFd" id="Lrt-1u-D8d"/>
                 <outlet property="btnLikes" destination="kWc-dw-zbi" id="eGc-4a-pde"/>
+                <outlet property="btnOption" destination="aJr-h5-m8W" id="HOU-G9-Cca"/>
+                <outlet property="btnProfile" destination="1qe-gQ-vqM" id="163-bC-prc"/>
                 <outlet property="btnViews" destination="wFV-RD-95r" id="Gkw-Wa-6Z2"/>
                 <outlet property="imgVUser" destination="4mH-8w-dOu" id="mg8-T9-WyG"/>
                 <outlet property="lblDate" destination="CmR-gM-vO4" id="FmD-vg-jcc"/>
