@@ -59,7 +59,16 @@ class TextNewsTableViewCell: UITableViewCell {
                 self.viewController?.navigationController?.pushViewController(AccountVC, animated: true)
                 
             }
-            
         }
+        self.btnOption.touchUpInside(genericTouchUpInsideHandler: { (sender) in
+            
+            let option  = OptionView.OptionViewWithHandler(optionType: .OtherUserPost, handler: { (Index, title) in
+                
+                
+            })
+            self.viewController?.tabBarController?.presentPopUp(view: option, shouldOutSideClick: true, type: .bottom, completionHandler: {
+                
+            })
+        })
     }
 }

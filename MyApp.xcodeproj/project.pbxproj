@@ -26,6 +26,8 @@
 		701DC9BC201653360020103D /* GenericTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DC9B5201653360020103D /* GenericTextView.swift */; };
 		701DC9BD201653360020103D /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DC9B6201653360020103D /* GenericView.swift */; };
 		701DC9C0201659D40020103D /* ishu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 701DC9BF201659D40020103D /* ishu.jpg */; };
+		7022C265202A182800D4EDF0 /* OptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7022C264202A182800D4EDF0 /* OptionView.xib */; };
+		7022C267202A184B00D4EDF0 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7022C266202A184B00D4EDF0 /* OptionView.swift */; };
 		7023855F20124BB90070A97C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7023855E20124BB90070A97C /* AppDelegate.swift */; };
 		7023856420124BB90070A97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7023856220124BB90070A97C /* Main.storyboard */; };
 		7023856620124BB90070A97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7023856520124BB90070A97C /* Assets.xcassets */; };
@@ -70,6 +72,8 @@
 		70281166201BE95B00E55E1A /* MIKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70281144201BE95A00E55E1A /* MIKeyboardManager.swift */; };
 		70281167201BE95B00E55E1A /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70281146201BE95A00E55E1A /* Localization.swift */; };
 		70281168201BE95B00E55E1A /* MasterConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70281147201BE95A00E55E1A /* MasterConstant.swift */; };
+		7028749F202A233700C325D5 /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7028749D202A233700C325D5 /* OptionTableViewCell.swift */; };
+		702874A0202A233700C325D5 /* OptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7028749E202A233700C325D5 /* OptionTableViewCell.xib */; };
 		702E21E22020D70A00FDCEB9 /* TagLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E21E02020D70A00FDCEB9 /* TagLineTableViewCell.swift */; };
 		702E21E32020D70A00FDCEB9 /* TagLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 702E21E12020D70A00FDCEB9 /* TagLineTableViewCell.xib */; };
 		702E21E52020F2A400FDCEB9 /* BookmarkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E21E42020F2A400FDCEB9 /* BookmarkDetailsViewController.swift */; };
@@ -111,6 +115,8 @@
 		701DC9B5201653360020103D /* GenericTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTextView.swift; sourceTree = "<group>"; };
 		701DC9B6201653360020103D /* GenericView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
 		701DC9BF201659D40020103D /* ishu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ishu.jpg; sourceTree = "<group>"; };
+		7022C264202A182800D4EDF0 /* OptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionView.xib; sourceTree = "<group>"; };
+		7022C266202A184B00D4EDF0 /* OptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
 		7023855B20124BB90070A97C /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7023855E20124BB90070A97C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7023856320124BB90070A97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -157,6 +163,8 @@
 		70281144201BE95A00E55E1A /* MIKeyboardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIKeyboardManager.swift; sourceTree = "<group>"; };
 		70281146201BE95A00E55E1A /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
 		70281147201BE95A00E55E1A /* MasterConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterConstant.swift; sourceTree = "<group>"; };
+		7028749D202A233700C325D5 /* OptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
+		7028749E202A233700C325D5 /* OptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionTableViewCell.xib; sourceTree = "<group>"; };
 		702E21E02020D70A00FDCEB9 /* TagLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLineTableViewCell.swift; sourceTree = "<group>"; };
 		702E21E12020D70A00FDCEB9 /* TagLineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagLineTableViewCell.xib; sourceTree = "<group>"; };
 		702E21E42020F2A400FDCEB9 /* BookmarkDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkDetailsViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +200,7 @@
 		70046E692013E0EA00DBBB88 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				7022C268202A185B00D4EDF0 /* Custom View */,
 				701DC9B0201653360020103D /* Generic */,
 				701DC9AA20164F710020103D /* Cusom Cell */,
 				709D8EE62013F0C500764F4E /* Super view classes */,
@@ -253,6 +262,8 @@
 				703EF87E201F77AB00FEE3D7 /* SettingsTableViewCell.xib */,
 				702E21E02020D70A00FDCEB9 /* TagLineTableViewCell.swift */,
 				702E21E12020D70A00FDCEB9 /* TagLineTableViewCell.xib */,
+				7028749D202A233700C325D5 /* OptionTableViewCell.swift */,
+				7028749E202A233700C325D5 /* OptionTableViewCell.xib */,
 			);
 			path = "Table view cell";
 			sourceTree = "<group>";
@@ -277,6 +288,15 @@
 				701DC9BF201659D40020103D /* ishu.jpg */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		7022C268202A185B00D4EDF0 /* Custom View */ = {
+			isa = PBXGroup;
+			children = (
+				7022C266202A184B00D4EDF0 /* OptionView.swift */,
+				7022C264202A182800D4EDF0 /* OptionView.xib */,
+			);
+			path = "Custom View";
 			sourceTree = "<group>";
 		};
 		7023855220124BB90070A97C = {
@@ -493,6 +513,7 @@
 				703EF873201D001000FEE3D7 /* Montserrat-Light.ttf in Resources */,
 				7023856920124BB90070A97C /* LaunchScreen.storyboard in Resources */,
 				7023856620124BB90070A97C /* Assets.xcassets in Resources */,
+				7022C265202A182800D4EDF0 /* OptionView.xib in Resources */,
 				703EF870201D001000FEE3D7 /* Montserrat-Regular.ttf in Resources */,
 				702E21E32020D70A00FDCEB9 /* TagLineTableViewCell.xib in Resources */,
 				7028111C201BB2F300E55E1A /* ajinkya-rahane_.jpg in Resources */,
@@ -512,6 +533,7 @@
 				703EF871201D001000FEE3D7 /* Montserrat-Bold.ttf in Resources */,
 				7028111A201BAD4F00E55E1A /* TextNewsTableViewCell.xib in Resources */,
 				703EF86F201D001000FEE3D7 /* Montserrat-SemiBold.ttf in Resources */,
+				702874A0202A233700C325D5 /* OptionTableViewCell.xib in Resources */,
 				703EF868201CF75700FEE3D7 /* ProfileTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -535,6 +557,7 @@
 				70281168201BE95B00E55E1A /* MasterConstant.swift in Sources */,
 				70281163201BE95B00E55E1A /* ExtensionUIView.swift in Sources */,
 				702E21E22020D70A00FDCEB9 /* TagLineTableViewCell.swift in Sources */,
+				7028749F202A233700C325D5 /* OptionTableViewCell.swift in Sources */,
 				70281160201BE95B00E55E1A /* ExtensionUIResponder.swift in Sources */,
 				70046E682013E0DF00DBBB88 /* SuperViewController.swift in Sources */,
 				702810CC201BA38300E55E1A /* ImageCollectionViewCell.swift in Sources */,
@@ -566,6 +589,7 @@
 				7028114C201BE95B00E55E1A /* AutoLayout.swift in Sources */,
 				70252CDB20277A4B00E6E74A /* SearchNewsCollectionViewCell.swift in Sources */,
 				7028114D201BE95B00E55E1A /* CoreData.swift in Sources */,
+				7022C267202A184B00D4EDF0 /* OptionView.swift in Sources */,
 				70281164201BE95B00E55E1A /* ExtensionUIViewController.swift in Sources */,
 				70046EC12013E91B00DBBB88 /* UploadViewController.swift in Sources */,
 				701DC9BC201653360020103D /* GenericTextView.swift in Sources */,

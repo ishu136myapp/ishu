@@ -75,6 +75,7 @@ class HomeViewController: SuperViewController,UITableViewDelegate, UITableViewDa
             let cell = tblFeed.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
             
             cell.configureCell(data: [:])
+            
             return cell
             
         case 1:

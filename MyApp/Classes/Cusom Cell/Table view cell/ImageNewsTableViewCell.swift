@@ -68,6 +68,21 @@ class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
             }
             
         }
+        
+        self.btnOption.touchUpInside(genericTouchUpInsideHandler: { (sender) in
+            
+            var  option  = UIView()
+                option  = OptionView.OptionViewWithHandler(optionType: .OtherUserPost, handler: { (Index, title) in
+                
+                self.viewController?.tabBarController?.dismissPopUp(view: option, completionHandler: {
+                    
+                })
+                
+            })
+            self.viewController?.tabBarController?.presentPopUp(view: option, shouldOutSideClick: true, type: .bottom, completionHandler: {
+                
+            })
+        })
     }
     // MARK: -
     // MARK: - Collection view data source and delegate
