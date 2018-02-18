@@ -26,6 +26,13 @@
 		701DC9BC201653360020103D /* GenericTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DC9B5201653360020103D /* GenericTextView.swift */; };
 		701DC9BD201653360020103D /* GenericView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 701DC9B6201653360020103D /* GenericView.swift */; };
 		701DC9C0201659D40020103D /* ishu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 701DC9BF201659D40020103D /* ishu.jpg */; };
+		7021EC2A20373A9F003B2186 /* ActiveBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021EC2320373A9F003B2186 /* ActiveBuilder.swift */; };
+		7021EC2B20373A9F003B2186 /* ActiveLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021EC2520373A9F003B2186 /* ActiveLabel.swift */; };
+		7021EC2C20373A9F003B2186 /* ActiveType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021EC2620373A9F003B2186 /* ActiveType.swift */; };
+		7021EC2D20373A9F003B2186 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7021EC2720373A9F003B2186 /* Info.plist */; };
+		7021EC2E20373A9F003B2186 /* RegexParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021EC2820373A9F003B2186 /* RegexParser.swift */; };
+		7021EC2F20373A9F003B2186 /* StringTrimExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021EC2920373A9F003B2186 /* StringTrimExtension.swift */; };
+		7021EC3220374678003B2186 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021EC3120374678003B2186 /* CustomTabBarController.swift */; };
 		7022C265202A182800D4EDF0 /* OptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7022C264202A182800D4EDF0 /* OptionView.xib */; };
 		7022C267202A184B00D4EDF0 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7022C266202A184B00D4EDF0 /* OptionView.swift */; };
 		7023855F20124BB90070A97C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7023855E20124BB90070A97C /* AppDelegate.swift */; };
@@ -74,6 +81,9 @@
 		70281168201BE95B00E55E1A /* MasterConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70281147201BE95A00E55E1A /* MasterConstant.swift */; };
 		7028749F202A233700C325D5 /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7028749D202A233700C325D5 /* OptionTableViewCell.swift */; };
 		702874A0202A233700C325D5 /* OptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7028749E202A233700C325D5 /* OptionTableViewCell.xib */; };
+		702D21EB20334BE3009EA434 /* TapableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702D21EA20334BE3009EA434 /* TapableLabel.swift */; };
+		702D21F02035EF0F009EA434 /* BubbleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702D21EE2035EF0F009EA434 /* BubbleCollectionViewCell.swift */; };
+		702D21F32035F33B009EA434 /* CollectionViewBubbleLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702D21F22035F33B009EA434 /* CollectionViewBubbleLayout.swift */; };
 		702E21E22020D70A00FDCEB9 /* TagLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E21E02020D70A00FDCEB9 /* TagLineTableViewCell.swift */; };
 		702E21E32020D70A00FDCEB9 /* TagLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 702E21E12020D70A00FDCEB9 /* TagLineTableViewCell.xib */; };
 		702E21E52020F2A400FDCEB9 /* BookmarkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E21E42020F2A400FDCEB9 /* BookmarkDetailsViewController.swift */; };
@@ -115,6 +125,14 @@
 		701DC9B5201653360020103D /* GenericTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericTextView.swift; sourceTree = "<group>"; };
 		701DC9B6201653360020103D /* GenericView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericView.swift; sourceTree = "<group>"; };
 		701DC9BF201659D40020103D /* ishu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ishu.jpg; sourceTree = "<group>"; };
+		7021EC2320373A9F003B2186 /* ActiveBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveBuilder.swift; sourceTree = "<group>"; };
+		7021EC2420373A9F003B2186 /* ActiveLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveLabel.h; sourceTree = "<group>"; };
+		7021EC2520373A9F003B2186 /* ActiveLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveLabel.swift; sourceTree = "<group>"; };
+		7021EC2620373A9F003B2186 /* ActiveType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveType.swift; sourceTree = "<group>"; };
+		7021EC2720373A9F003B2186 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7021EC2820373A9F003B2186 /* RegexParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexParser.swift; sourceTree = "<group>"; };
+		7021EC2920373A9F003B2186 /* StringTrimExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringTrimExtension.swift; sourceTree = "<group>"; };
+		7021EC3120374678003B2186 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		7022C264202A182800D4EDF0 /* OptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionView.xib; sourceTree = "<group>"; };
 		7022C266202A184B00D4EDF0 /* OptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
 		7023855B20124BB90070A97C /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +183,9 @@
 		70281147201BE95A00E55E1A /* MasterConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterConstant.swift; sourceTree = "<group>"; };
 		7028749D202A233700C325D5 /* OptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
 		7028749E202A233700C325D5 /* OptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionTableViewCell.xib; sourceTree = "<group>"; };
+		702D21EA20334BE3009EA434 /* TapableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapableLabel.swift; sourceTree = "<group>"; };
+		702D21EE2035EF0F009EA434 /* BubbleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleCollectionViewCell.swift; sourceTree = "<group>"; };
+		702D21F22035F33B009EA434 /* CollectionViewBubbleLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewBubbleLayout.swift; sourceTree = "<group>"; };
 		702E21E02020D70A00FDCEB9 /* TagLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLineTableViewCell.swift; sourceTree = "<group>"; };
 		702E21E12020D70A00FDCEB9 /* TagLineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagLineTableViewCell.xib; sourceTree = "<group>"; };
 		702E21E42020F2A400FDCEB9 /* BookmarkDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkDetailsViewController.swift; sourceTree = "<group>"; };
@@ -206,6 +227,7 @@
 				709D8EE62013F0C500764F4E /* Super view classes */,
 				70046EBD2013E7FE00DBBB88 /* Tab Bar Classes */,
 				709D8EE72013F0D800764F4E /* Flow Classess */,
+				7021EC3320374682003B2186 /* TabBarController */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -277,6 +299,7 @@
 				701DC9B4201653360020103D /* GenericTextField.swift */,
 				701DC9B5201653360020103D /* GenericTextView.swift */,
 				701DC9B6201653360020103D /* GenericView.swift */,
+				702D21EA20334BE3009EA434 /* TapableLabel.swift */,
 			);
 			path = Generic;
 			sourceTree = "<group>";
@@ -288,6 +311,37 @@
 				701DC9BF201659D40020103D /* ishu.jpg */,
 			);
 			path = Images;
+			sourceTree = "<group>";
+		};
+		7021EC2220373A9F003B2186 /* ActiveLabel */ = {
+			isa = PBXGroup;
+			children = (
+				7021EC2320373A9F003B2186 /* ActiveBuilder.swift */,
+				7021EC2420373A9F003B2186 /* ActiveLabel.h */,
+				7021EC2520373A9F003B2186 /* ActiveLabel.swift */,
+				7021EC2620373A9F003B2186 /* ActiveType.swift */,
+				7021EC2720373A9F003B2186 /* Info.plist */,
+				7021EC2820373A9F003B2186 /* RegexParser.swift */,
+				7021EC2920373A9F003B2186 /* StringTrimExtension.swift */,
+			);
+			path = ActiveLabel;
+			sourceTree = "<group>";
+		};
+		7021EC3020373AB0003B2186 /* Framework library */ = {
+			isa = PBXGroup;
+			children = (
+				702D21F22035F33B009EA434 /* CollectionViewBubbleLayout.swift */,
+				7021EC2220373A9F003B2186 /* ActiveLabel */,
+			);
+			path = "Framework library";
+			sourceTree = "<group>";
+		};
+		7021EC3320374682003B2186 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				7021EC3120374678003B2186 /* CustomTabBarController.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 		7022C268202A185B00D4EDF0 /* Custom View */ = {
@@ -327,6 +381,7 @@
 				70281121201BE95A00E55E1A /* Master */,
 				709D8F242013F62000764F4E /* Configuration */,
 				70046E692013E0EA00DBBB88 /* Classes */,
+				7021EC3020373AB0003B2186 /* Framework library */,
 				70046ED02013EBFF00DBBB88 /* Fonts */,
 			);
 			path = MyApp;
@@ -339,6 +394,7 @@
 				702810CB201BA38300E55E1A /* ImageCollectionViewCell.xib */,
 				7028111D201BDD5200E55E1A /* NewsDetailsCollectionViewCell.swift */,
 				70252CDA20277A4B00E6E74A /* SearchNewsCollectionViewCell.swift */,
+				702D21EE2035EF0F009EA434 /* BubbleCollectionViewCell.swift */,
 			);
 			path = "Collection view cell";
 			sourceTree = "<group>";
@@ -529,6 +585,7 @@
 				70046ECE2013EBEC00DBBB88 /* Roboto-Bold.ttf in Resources */,
 				703EF872201D001000FEE3D7 /* Montserrat-Black.ttf in Resources */,
 				702810CD201BA38300E55E1A /* ImageCollectionViewCell.xib in Resources */,
+				7021EC2D20373A9F003B2186 /* Info.plist in Resources */,
 				701DC9C0201659D40020103D /* ishu.jpg in Resources */,
 				703EF871201D001000FEE3D7 /* Montserrat-Bold.ttf in Resources */,
 				7028111A201BAD4F00E55E1A /* TextNewsTableViewCell.xib in Resources */,
@@ -545,6 +602,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702D21EB20334BE3009EA434 /* TapableLabel.swift in Sources */,
 				70281148201BE95B00E55E1A /* MILoader.swift in Sources */,
 				7028115B201BE95B00E55E1A /* ExtensionUIButton.swift in Sources */,
 				7028114E201BE95B00E55E1A /* CoreDataContext+Extension.swift in Sources */,
@@ -562,15 +620,20 @@
 				70046E682013E0DF00DBBB88 /* SuperViewController.swift in Sources */,
 				702810CC201BA38300E55E1A /* ImageCollectionViewCell.swift in Sources */,
 				7028111F201BDD5200E55E1A /* NewsDetailsCollectionViewCell.swift in Sources */,
+				7021EC2A20373A9F003B2186 /* ActiveBuilder.swift in Sources */,
 				70281119201BAD4F00E55E1A /* TextNewsTableViewCell.swift in Sources */,
+				702D21F02035EF0F009EA434 /* BubbleCollectionViewCell.swift in Sources */,
 				709D8F282013F62000764F4E /* APIRequest.swift in Sources */,
+				7021EC3220374678003B2186 /* CustomTabBarController.swift in Sources */,
 				70281153201BE95B00E55E1A /* ExtensionDate.swift in Sources */,
 				70281152201BE95B00E55E1A /* ExtensionArray.swift in Sources */,
 				70281150201BE95B00E55E1A /* FetchResultController+Extension.swift in Sources */,
+				702D21F32035F33B009EA434 /* CollectionViewBubbleLayout.swift in Sources */,
 				70281151201BE95B00E55E1A /* ExetensionFloat.swift in Sources */,
 				7028115D201BE95B00E55E1A /* ExtensionUIImage.swift in Sources */,
 				70281167201BE95B00E55E1A /* Localization.swift in Sources */,
 				703EF876201D0D4E00FEE3D7 /* AccountViewController.swift in Sources */,
+				7021EC2F20373A9F003B2186 /* StringTrimExtension.swift in Sources */,
 				70281162201BE95B00E55E1A /* ExtensionUITextView.swift in Sources */,
 				70281165201BE95B00E55E1A /* ExtensionURL.swift in Sources */,
 				701DC9B9201653360020103D /* GenericImageView.swift in Sources */,
@@ -585,6 +648,7 @@
 				709D8F2A2013F62000764F4E /* MessagesConstant.swift in Sources */,
 				70046EC32013E94900DBBB88 /* TagLineViewController.swift in Sources */,
 				70281159201BE95B00E55E1A /* ExtensionUIApplication.swift in Sources */,
+				7021EC2E20373A9F003B2186 /* RegexParser.swift in Sources */,
 				702E21E52020F2A400FDCEB9 /* BookmarkDetailsViewController.swift in Sources */,
 				7028114C201BE95B00E55E1A /* AutoLayout.swift in Sources */,
 				70252CDB20277A4B00E6E74A /* SearchNewsCollectionViewCell.swift in Sources */,
@@ -601,6 +665,8 @@
 				7023855F20124BB90070A97C /* AppDelegate.swift in Sources */,
 				701DC9BA201653360020103D /* GenericLabel.swift in Sources */,
 				70281149201BE95B00E55E1A /* MIPopUpOverlay.swift in Sources */,
+				7021EC2B20373A9F003B2186 /* ActiveLabel.swift in Sources */,
+				7021EC2C20373A9F003B2186 /* ActiveType.swift in Sources */,
 				7028115C201BE95B00E55E1A /* ExtensionUIColor.swift in Sources */,
 				709D8F292013F62000764F4E /* ApplicationConstant.swift in Sources */,
 				7028114B201BE95B00E55E1A /* MIToastAlert.swift in Sources */,

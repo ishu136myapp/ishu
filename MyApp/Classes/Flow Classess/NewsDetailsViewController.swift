@@ -13,7 +13,6 @@ class NewsDetailsViewController: SuperViewController,UICollectionViewDelegate, U
     @IBOutlet var vWNavigation : UIView!
     @IBOutlet var collView : UICollectionView!
     
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -37,6 +36,19 @@ class NewsDetailsViewController: SuperViewController,UICollectionViewDelegate, U
     // MARK: -
     // MARK: - Action Event
     
+    @IBAction func btnOptionClicked(_ sender: UIButton)
+    {
+        
+        var  option  = UIView()
+        option  = OptionView.OptionViewWithHandler(optionType: .OtherUserPost, handler: { (Index, title) in
+            self.dismissPopUp(view: option, completionHandler: {
+            })
+        })
+        self.presentPopUp(view: option, shouldOutSideClick: true, type: .bottom, completionHandler: {
+            
+        })
+        
+    }
     
     
     // MARK: -

@@ -10,6 +10,7 @@ import UIKit
 
 class ImageCollectionViewCell: UICollectionViewCell {
     @IBOutlet var imgV : UIImageView!
+    @IBOutlet var btnClose: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

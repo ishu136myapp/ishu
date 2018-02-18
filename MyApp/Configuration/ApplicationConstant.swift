@@ -20,6 +20,8 @@ let CColorRed_D0021B = CRGB(r: 208, g: 3, b: 27)
 let CColorRed_C91215 = CRGB(r: 201, g: 18, b: 21)
 let CColorRed_E77B89 = CRGB(r: 231, g: 123, b: 137)
 
+let CColorBlue_007AFF = CRGB(r: 0, g: 122, b: 255)
+
 
 let CColorGray_F5F5F5 = CRGB(r: 245, g: 245, b: 245)
 let CColorGray_E3E3E3 = CRGB(r: 227, g: 227, b: 227)

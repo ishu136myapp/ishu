@@ -13,7 +13,7 @@ class NewsDetailsCollectionViewCell: UICollectionViewCell,UICollectionViewDataSo
     @IBOutlet weak var imgVUser : UIImageView!
     @IBOutlet weak var vWimgUser : UIView!
     @IBOutlet weak var lblUserName : UILabel!
-    @IBOutlet weak var lblTagline : UILabel!
+    @IBOutlet weak var lblTagline : ActiveLabel!
     @IBOutlet weak var lblDate : UILabel!
     @IBOutlet weak var lblHeadline : UILabel!
     @IBOutlet weak var lblDetails : UILabel!
@@ -59,6 +59,15 @@ class NewsDetailsCollectionViewCell: UICollectionViewCell,UICollectionViewDataSo
                 
             }
             
+        }
+        
+        self.lblTagline.hashtagColor = CColorBlue_007AFF
+        self.lblTagline.handleHashtagTap { (tapString) in
+            
+            print(tapString)
+            let BookmarkDetailsVC = self.viewController?.storyboard?.instantiateViewController(withIdentifier: "BookmarkDetailsViewController") as! BookmarkDetailsViewController
+            BookmarkDetailsVC.iObject = "#" + tapString
+            self.viewController?.navigationController?.pushViewController(BookmarkDetailsVC, animated: true)
         }
     }
     

@@ -65,8 +65,8 @@
                         </constraints>
                         <state key="normal" image="more"/>
                     </button>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="754" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSi-P8-aPt" customClass="GenericLabel" customModule="MyApp" customModuleProvider="target">
-                        <rect key="frame" x="60" y="24" width="285" height="28"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="754" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSi-P8-aPt" customClass="ActiveLabel" customModule="MyApp" customModuleProvider="target">
+                        <rect key="frame" x="60" y="24" width="285" height="29"/>
                         <string key="text">#India  #Rajasthan #Pratapgarh 
 #ChotiSadri #Bambori</string>
                         <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
@@ -74,7 +74,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1NA-Up-0Yb">
-                        <rect key="frame" x="0.0" y="109" width="375" height="211"/>
+                        <rect key="frame" x="0.0" y="110" width="375" height="211"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="1NA-Up-0Yb" secondAttribute="height" multiplier="16:9" id="qCE-Kw-Ig7"/>
@@ -91,25 +91,25 @@
                         </connections>
                     </collectionView>
                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" hidesForSinglePage="YES" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="R9V-wp-JcY">
-                        <rect key="frame" x="160" y="288" width="55" height="37"/>
+                        <rect key="frame" x="160" y="289" width="55" height="37"/>
                         <color key="pageIndicatorTintColor" red="0.78823529411764703" green="0.78823529411764703" blue="0.78823529411764703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="currentPageIndicatorTintColor" red="0.46274509800000002" green="0.039215686270000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </pageControl>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="753" text="Ravi Shastri defends Ajinkya Rahane's omission from first two Tests" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hz8-W6-4aA" customClass="GenericLabel" customModule="MyApp" customModuleProvider="target">
-                        <rect key="frame" x="10" y="56" width="355" height="33"/>
+                        <rect key="frame" x="10" y="57" width="355" height="33"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAg-yg-o3D">
-                        <rect key="frame" x="10" y="328" width="355" height="56"/>
+                        <rect key="frame" x="10" y="329" width="355" height="56"/>
                         <string key="text">JOHANNESBURG: India coach Ravi Shastri on Monday defended the team management's decision to leave out Ajinkya Rahane from the first two Tests in South Africa, saying Rohit Sharma was the best option going by form.One of the most successful Indian batsmen overseas in recent years, vice-captain Rahane was not picked for the Tests in Cape Town and Centurion, with the Indian team management preferring to go with limited-overs specialist Sharma on "current form".</string>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                         <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 Jan 2018 11:33 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yZ3-L7-RO6">
-                        <rect key="frame" x="10" y="89" width="101" height="20"/>
+                        <rect key="frame" x="10" y="90" width="100.5" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="Fnc-hE-LWI"/>
                         </constraints>
@@ -118,7 +118,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6g-f2-1x5">
-                        <rect key="frame" x="0.0" y="394" width="375" height="36"/>
+                        <rect key="frame" x="0.0" y="395" width="375" height="36"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtj-a9-hxa">
                                 <rect key="frame" x="10" y="0.0" width="36" height="36"/>
@@ -185,7 +185,7 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YP3-vk-taO">
-                        <rect key="frame" x="0.0" y="430" width="375" height="6"/>
+                        <rect key="frame" x="0.0" y="431" width="375" height="6"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="6" id="8hp-Ax-VxS"/>

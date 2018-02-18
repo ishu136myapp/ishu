@@ -184,10 +184,10 @@ class AccountViewController: SuperViewController,UITableViewDelegate, UITableVie
     {
         
         let NewsDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "NewsDetailsViewController") as! NewsDetailsViewController
-        //        self.present(UINavigationController(rootViewController: NewsDetailsVC), animated: true) {
-        //
-        //        }
-        self.navigationController?.pushViewController(NewsDetailsVC, animated: true)
+                self.present(UINavigationController(rootViewController: NewsDetailsVC), animated: true) {
+        
+                }
+        //self.navigationController?.pushViewController(NewsDetailsVC, animated: true)
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView)

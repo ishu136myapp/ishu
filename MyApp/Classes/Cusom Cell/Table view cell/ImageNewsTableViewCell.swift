@@ -13,7 +13,7 @@ class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
     @IBOutlet weak var imgVUser : UIImageView!
     @IBOutlet weak var vWimgUser : UIView!
     @IBOutlet weak var lblUserName : UILabel!
-    @IBOutlet weak var lblTagline : UILabel!
+    @IBOutlet weak var lblTagline : ActiveLabel!
     @IBOutlet weak var lblDate : UILabel!
     @IBOutlet weak var lblHeadline : UILabel!
     @IBOutlet weak var lblDetails : UILabel!
@@ -25,6 +25,8 @@ class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
     @IBOutlet weak var collView : UICollectionView!
     @IBOutlet var pgControl : UIPageControl!
     var arrImage : Array<Any>?
+    var arrHashTag : Array<Any>?
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -52,9 +54,15 @@ class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
     {
         
         arrImage = ["ajinkya-rahane_.jpg","ishu.jpg","ishu.jpg"]
+        arrHashTag = [["tag":"#India"],
+                    ["tag":"#Pratapgarh"],
+                    ["tag":"#ChotiSadri"],
+                    ["tag":"#Bambori"]]
+        
         pgControl.numberOfPages = arrImage?.count ?? 0
         pgControl.currentPage = 0
         self.collView.reloadData()
+    
         self.btnLikes.touchUpInside { (sender) in
             sender.isSelected = !sender.isSelected
         }
@@ -74,15 +82,28 @@ class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
             var  option  = UIView()
                 option  = OptionView.OptionViewWithHandler(optionType: .OtherUserPost, handler: { (Index, title) in
                 
-                self.viewController?.tabBarController?.dismissPopUp(view: option, completionHandler: {
+                self.viewController?.dismissPopUp(view: option, completionHandler: {
                     
                 })
                 
             })
-            self.viewController?.tabBarController?.presentPopUp(view: option, shouldOutSideClick: true, type: .bottom, completionHandler: {
+            self.viewController?.presentPopUp(view: option, shouldOutSideClick: true, type: .bottom, completionHandler: {
                 
             })
         })
+        
+//        self.lblTagline.configureHashTag(HashTag: [["":""]]) { (details) in
+//
+//            print("clicked")
+//        }
+        self.lblTagline.hashtagColor = CColorBlue_007AFF
+        self.lblTagline.handleHashtagTap { (tapString) in
+            
+            print(tapString)
+            let BookmarkDetailsVC = self.viewController?.storyboard?.instantiateViewController(withIdentifier: "BookmarkDetailsViewController") as! BookmarkDetailsViewController
+            BookmarkDetailsVC.iObject = "#" + tapString
+            self.viewController?.navigationController?.pushViewController(BookmarkDetailsVC, animated: true)
+        }
     }
     // MARK: -
     // MARK: - Collection view data source and delegate
@@ -90,6 +111,7 @@ class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
         return arrImage?.count ?? 0
+        
     }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
     {
@@ -97,10 +119,11 @@ class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let cell = collView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as! ImageCollectionViewCell
-    
-        cell.imgV.image = UIImage(named: (arrImage?[indexPath.row] as! String))
-        return cell
+            let cell = collView.dequeueReusableCell(withReuseIdentifier: "ImageCollectionViewCell", for: indexPath) as! ImageCollectionViewCell
+            
+            cell.imgV.image = UIImage(named: (arrImage?[indexPath.row] as! String))
+            return cell
+      
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView){

@@ -13,7 +13,7 @@ class TextNewsTableViewCell: UITableViewCell {
     @IBOutlet weak var imgVUser : UIImageView!
     @IBOutlet weak var vWimgUser : UIView!
     @IBOutlet weak var lblUserName : UILabel!
-    @IBOutlet weak var lblTagline : UILabel!
+    @IBOutlet weak var lblTagline : ActiveLabel!
     @IBOutlet weak var lblHeadline : UILabel!
     @IBOutlet weak var lblDate : UILabel!
     @IBOutlet weak var lblDetails : UILabel!
@@ -62,13 +62,30 @@ class TextNewsTableViewCell: UITableViewCell {
         }
         self.btnOption.touchUpInside(genericTouchUpInsideHandler: { (sender) in
             
-            let option  = OptionView.OptionViewWithHandler(optionType: .OtherUserPost, handler: { (Index, title) in
+            var  option  = UIView()
+             option  = OptionView.OptionViewWithHandler(optionType: .OtherUserPost, handler: { (Index, title) in
                 
                 
+                self.viewController?.dismissPopUp(view: option, completionHandler: {
+                    
+                })
             })
-            self.viewController?.tabBarController?.presentPopUp(view: option, shouldOutSideClick: true, type: .bottom, completionHandler: {
+            self.viewController?.presentPopUp(view: option, shouldOutSideClick: true, type: .bottom, completionHandler: {
                 
             })
         })
+        
+        self.lblTagline.hashtagColor = CColorBlue_007AFF
+        self.lblTagline.handleHashtagTap { (tapString) in
+            
+            print(tapString)
+            self.lblTagline.handleHashtagTap { (tapString) in
+                
+                print(tapString)
+                let BookmarkDetailsVC = self.viewController?.storyboard?.instantiateViewController(withIdentifier: "BookmarkDetailsViewController") as! BookmarkDetailsViewController
+                BookmarkDetailsVC.iObject = "#" + tapString
+                self.viewController?.navigationController?.pushViewController(BookmarkDetailsVC, animated: true)
+            }
+        }
     }
 }

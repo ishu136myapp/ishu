@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="Foq-6T-yx6" customClass="BubbleCollectionViewCell" customModule="MyApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="16"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="16"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v0V-ja-LH9">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="16"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="752" text="#India" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xw-Ab-gii">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="16"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkr-Q6-lmd">
+                                <rect key="frame" x="68" y="0.0" width="32" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="IAb-qh-syx"/>
+                                </constraints>
+                                <state key="normal" image="sign_cancel_item"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9xw-Ab-gii" secondAttribute="trailing" id="JNe-bZ-hsD"/>
+                            <constraint firstAttribute="bottom" secondItem="9xw-Ab-gii" secondAttribute="bottom" id="KZ0-gT-gL5"/>
+                            <constraint firstAttribute="bottom" secondItem="dkr-Q6-lmd" secondAttribute="bottom" id="c6P-j1-uAm"/>
+                            <constraint firstItem="9xw-Ab-gii" firstAttribute="leading" secondItem="v0V-ja-LH9" secondAttribute="leading" id="fvp-8g-CsD"/>
+                            <constraint firstItem="9xw-Ab-gii" firstAttribute="top" secondItem="v0V-ja-LH9" secondAttribute="top" id="i19-t5-iGN"/>
+                            <constraint firstAttribute="trailing" secondItem="dkr-Q6-lmd" secondAttribute="trailing" id="mMH-nT-r6R"/>
+                            <constraint firstItem="dkr-Q6-lmd" firstAttribute="top" secondItem="v0V-ja-LH9" secondAttribute="top" id="r0g-jH-glN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="v0V-ja-LH9" secondAttribute="trailing" id="4YH-lc-Lve"/>
+                <constraint firstItem="v0V-ja-LH9" firstAttribute="leading" secondItem="Foq-6T-yx6" secondAttribute="leading" id="F9O-Me-VEd"/>
+                <constraint firstAttribute="bottom" secondItem="v0V-ja-LH9" secondAttribute="bottom" id="K3c-H7-5xE"/>
+                <constraint firstItem="v0V-ja-LH9" firstAttribute="top" secondItem="Foq-6T-yx6" secondAttribute="top" id="bKH-6s-LaY"/>
+            </constraints>
+            <size key="customSize" width="102" height="33"/>
+            <connections>
+                <outlet property="btnCancle" destination="dkr-Q6-lmd" id="alI-f0-c2h"/>
+                <outlet property="lblTitle" destination="9xw-Ab-gii" id="uj6-sr-LAn"/>
+                <outlet property="vWContent" destination="v0V-ja-LH9" id="jAF-lQ-OOZ"/>
+            </connections>
+            <point key="canvasLocation" x="51" y="43"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sign_cancel_item" width="16" height="16"/>
+    </resources>
+</document>

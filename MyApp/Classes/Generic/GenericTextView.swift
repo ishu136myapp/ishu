@@ -26,11 +26,15 @@ class GenericTextView: UITextView {
     
         if self.tag == 100
         {
-            self.backgroundColor = CColorGray_EEEEEE
-            self.textContainerInset.top = 15
-            self.textContainerInset.left = 15
-            self.textContainerInset.right = 15
-            self.textContainerInset.bottom = 15
+           // self.backgroundColor = CColorGray_EEEEEE
+            self.textContainerInset.top = 8
+            self.textContainerInset.left = 8
+            self.textContainerInset.right = 8
+            self.textContainerInset.bottom = 8
+            
+            self.layer.cornerRadius = 5
+            self.layer.borderWidth = 1
+            self.layer.borderColor = UIColor.gray.cgColor
         }
     }
     

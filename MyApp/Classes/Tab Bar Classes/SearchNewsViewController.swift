@@ -53,7 +53,10 @@ class SearchNewsViewController: SuperViewController,UICollectionViewDelegate,UIC
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
     {
         let NewsDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "NewsDetailsViewController") as! NewsDetailsViewController
-        self.navigationController?.pushViewController(NewsDetailsVC, animated: true)
+       
+        self.present(UINavigationController(rootViewController: NewsDetailsVC), animated: true) {
+            
+        }//self.navigationController?.pushViewController(NewsDetailsVC, animated: true)
     }
     
     // MARK: -
