@@ -23,14 +23,13 @@ class GenericTextView: UITextView {
     {
         self.delegate = self
     
-    
+        self.textContainerInset.top = 8
+        self.textContainerInset.left = 8
+        self.textContainerInset.right = 8
+        self.textContainerInset.bottom = 8
         if self.tag == 100
         {
-           // self.backgroundColor = CColorGray_EEEEEE
-            self.textContainerInset.top = 8
-            self.textContainerInset.left = 8
-            self.textContainerInset.right = 8
-            self.textContainerInset.bottom = 8
+           // self.backgroundColor = CColorGray_EEEEE
             
             self.layer.cornerRadius = 5
             self.layer.borderWidth = 1

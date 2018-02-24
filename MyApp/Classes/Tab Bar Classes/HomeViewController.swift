@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomeViewController: SuperViewController,UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: SuperViewController {
     
 
     @IBOutlet var tblFeed : UITableView!
@@ -56,9 +56,14 @@ class HomeViewController: SuperViewController,UITableViewDelegate, UITableViewDa
     // MARK: -
     // MARK: - Action Event
     
-    
-    // MARK: -
-    // MARK: - UITable view Data Source and Delegate
+
+}
+
+// MARK: -
+// MARK: - UITable view Data Source and Delegate
+
+extension HomeViewController : UITableViewDelegate, UITableViewDataSource
+{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
@@ -75,6 +80,20 @@ class HomeViewController: SuperViewController,UITableViewDelegate, UITableViewDa
             let cell = tblFeed.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
             
             cell.configureCell(data: [:])
+            cell.btnLikes.touchUpInside(genericTouchUpInsideHandler: { (sender) in
+                
+                var  alertVW  = UIView()
+                alertVW  = SignInRequiredPop.alertViewWithHandler(handler: { (index, title) in
+                    
+                    self.dismissPopUp(view: alertVW, completionHandler: {
+                        
+                    })
+                })
+                self.presentPopUp(view: alertVW, shouldOutSideClick: true, type: .center, completionHandler: {
+                    
+                })
+                
+            })
             
             return cell
             
@@ -139,7 +158,7 @@ class HomeViewController: SuperViewController,UITableViewDelegate, UITableViewDa
             cell.lblDetails.text = "JOHANNESBURG: India coach Ravi Shastri on Monday defended the team management's decision to leave out Ajinkya Rahane from the first two Tests in South Africa, saying Rohit Sharma was the best option going by form.One of the most successful Indian batsmen overseas in recent years, vice-captain Rahane was not picked for the Tests in Cape Town and Centurion, with the Indian team management preferring to go with limited-overs specialist Sharma on current form."
             return cell
         }
-    
+        
     }
     
     
@@ -148,7 +167,7 @@ class HomeViewController: SuperViewController,UITableViewDelegate, UITableViewDa
         
         let NewsDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "NewsDetailsViewController") as! NewsDetailsViewController
         self.present(UINavigationController(rootViewController: NewsDetailsVC), animated: true) {
-
+            
         }
         //self.navigationController?.pushViewController(NewsDetailsVC, animated: true)
     }

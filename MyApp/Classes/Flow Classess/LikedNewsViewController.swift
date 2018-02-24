@@ -1,26 +1,17 @@
 //
-//  BookmarkDetailsViewController.swift
+//  LikedNewsViewController.swift
 //  MyApp
 //
-//  Created by ishwar lal janwa on 31/01/18.
+//  Created by ishwar lal janwa on 24/02/18.
 //  Copyright © 2018 MyApp. All rights reserved.
 //
 
 import UIKit
-enum CreatedUserType {
-    case mine
-    case Other
-}
 
-class BookmarkDetailsViewController: SuperViewController
-{
-    var CreateUserType : CreatedUserType = .Other
-    @IBOutlet var tblFeed : UITableView!
-    @IBOutlet var vWNavigation : UIView!
-    @IBOutlet var vwTbleHeader : UIView!
-    @IBOutlet var lblTitle : UILabel!
-    @IBOutlet var btnBookMark : UIButton!
+class LikedNewsViewController: SuperViewController {
     
+    
+    @IBOutlet var tblLiked : UITableView!
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -37,60 +28,25 @@ class BookmarkDetailsViewController: SuperViewController
     func initialize()
     {
         //...
-        vWNavigation.backgroundColor =  CRGBA(r: 0, g: 0, b: 0, a: 0.3)
-        lblTitle.text = self.iObject as? String
-        tblFeed.register(UINib(nibName: "ImageNewsTableViewCell", bundle: nil), forCellReuseIdentifier: "ImageNewsTableViewCell")
-        tblFeed.register(UINib(nibName: "TextNewsTableViewCell", bundle: nil), forCellReuseIdentifier: "TextNewsTableViewCell")
+        self.title = "Liked"
         
-        vwTbleHeader.frame = CGRect(x: 0, y: 0, width: CScreenWidth, height: (260/375*CScreenWidth))
-        tblFeed.tableHeaderView = vwTbleHeader
-        
-        //. this bookmark created by me
-
-        if self.CreateUserType == .mine
-        {
-            btnBookMark.setImage(UIImage(named: "more_white"), for: .normal)
-        }
-        
+        tblLiked.register(UINib(nibName: "ImageNewsTableViewCell", bundle: nil), forCellReuseIdentifier: "ImageNewsTableViewCell")
+        tblLiked.register(UINib(nibName: "TextNewsTableViewCell", bundle: nil), forCellReuseIdentifier: "TextNewsTableViewCell")
     }
     
     // MARK: -
     // MARK: - loadData
     
-    
     // MARK: -
     // MARK: - Action Event
     
-    @IBAction func btnBookMarkClicked(sender : UIButton)
-    {
-        if self.CreateUserType == .mine
-        {
-            //is created by me for edit and delete option
-            var  option  = UIView()
-            option  = OptionView.OptionViewWithHandler(optionType: .MyPost, handler: { (Index, title) in
-                
-                self.dismissPopUp(view: option, completionHandler: {
-                    
-                })
-                
-            })
-            self.presentPopUp(view: option, shouldOutSideClick: true, type: .bottom, completionHandler: {
-                
-            })
-            
-        }
-        else
-        {
-            sender.isSelected = !sender.isSelected
-        }
-
-    }
+    
 }
 
 // MARK: -
 // MARK: - UITable view Data Source and Delegate
 
-extension BookmarkDetailsViewController : UITableViewDataSource, UITableViewDelegate
+extension LikedNewsViewController : UITableViewDelegate, UITableViewDataSource
 {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
@@ -105,15 +61,16 @@ extension BookmarkDetailsViewController : UITableViewDataSource, UITableViewDele
         case 0:
             
             let identifier = "ImageNewsTableViewCell"
-            let cell = tblFeed.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
+            let cell = tblLiked.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
             
             cell.configureCell(data: [:])
+            
             return cell
             
         case 1:
             
             let identifier = "ImageNewsTableViewCell"
-            let cell = tblFeed.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
+            let cell = tblLiked.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
             
             cell.configureCell(data: [:])
             cell.lblHeadline.text = "Ravi Shastri defends Ajinkya Rahane's omission from first two Tests"
@@ -123,7 +80,7 @@ extension BookmarkDetailsViewController : UITableViewDataSource, UITableViewDele
         case 2:
             
             let identifier = "ImageNewsTableViewCell"
-            let cell = tblFeed.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
+            let cell = tblLiked.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
             
             cell.configureCell(data: [:])
             cell.lblHeadline.text = ""
@@ -133,7 +90,7 @@ extension BookmarkDetailsViewController : UITableViewDataSource, UITableViewDele
         case 3 :
             
             let identifier = "TextNewsTableViewCell"
-            let cell = tblFeed.dequeueReusableCell(withIdentifier: identifier) as! TextNewsTableViewCell
+            let cell = tblLiked.dequeueReusableCell(withIdentifier: identifier) as! TextNewsTableViewCell
             
             cell.configureCell(data: [:])
             cell.lblHeadline.text = "Ravi Shastri defends Ajinkya Rahane's omission from first two Tests"
@@ -144,7 +101,7 @@ extension BookmarkDetailsViewController : UITableViewDataSource, UITableViewDele
         case 4 :
             
             let identifier = "TextNewsTableViewCell"
-            let cell = tblFeed.dequeueReusableCell(withIdentifier: identifier) as! TextNewsTableViewCell
+            let cell = tblLiked.dequeueReusableCell(withIdentifier: identifier) as! TextNewsTableViewCell
             
             cell.configureCell(data: [:])
             cell.lblHeadline.text = "Ravi Shastri defends Ajinkya Rahane's omission from first two Tests"
@@ -154,7 +111,7 @@ extension BookmarkDetailsViewController : UITableViewDataSource, UITableViewDele
         case 5 :
             
             let identifier = "TextNewsTableViewCell"
-            let cell = tblFeed.dequeueReusableCell(withIdentifier: identifier) as! TextNewsTableViewCell
+            let cell = tblLiked.dequeueReusableCell(withIdentifier: identifier) as! TextNewsTableViewCell
             
             cell.configureCell(data: [:])
             cell.lblHeadline.text = ""
@@ -164,7 +121,7 @@ extension BookmarkDetailsViewController : UITableViewDataSource, UITableViewDele
         default:
             
             let identifier = "ImageNewsTableViewCell"
-            let cell = tblFeed.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
+            let cell = tblLiked.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
             
             cell.configureCell(data: [:])
             cell.lblHeadline.text = "Ravi Shastri defends Ajinkya Rahane's omission from first two Tests"
@@ -174,10 +131,13 @@ extension BookmarkDetailsViewController : UITableViewDataSource, UITableViewDele
         
     }
     
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         
         let NewsDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "NewsDetailsViewController") as! NewsDetailsViewController
-        self.navigationController?.pushViewController(NewsDetailsVC, animated: true)
+        self.present(UINavigationController(rootViewController: NewsDetailsVC), animated: true) {
+        }
     }
 }
+

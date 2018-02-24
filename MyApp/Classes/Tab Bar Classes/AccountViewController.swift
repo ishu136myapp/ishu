@@ -8,7 +8,13 @@
 
 import UIKit
 
-class AccountViewController: SuperViewController,UITableViewDelegate, UITableViewDataSource {
+enum AccountType {
+    case Account
+    case Profile
+}
+class AccountViewController: SuperViewController {
+    
+    var accountType  : AccountType = .Account
     
     @IBOutlet weak var imgVUser : UIImageView!
     @IBOutlet weak var vWimgUser : UIView!
@@ -39,6 +45,22 @@ class AccountViewController: SuperViewController,UITableViewDelegate, UITableVie
     // MARK: - General Method
     func initialize()
     {
+        
+        if self.accountType == .Account
+        {
+            let image =   UIImage(named: "setting")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+            
+            let barBtnSetting = UIBarButtonItem(image: image, style: .plain, target: self, action:#selector(self.barBtnSettingClicked))
+            self.navigationItem.rightBarButtonItem = barBtnSetting
+            self.btnEditProfile.isHidden = false
+        }
+        else
+        {
+            self.title = "Profile"
+            self.btnEditProfile.isHidden = true
+            
+        }
+        
         imgVUser.layer.cornerRadius = imgVUser.CViewWidth / 2
         imgVUser.layer.masksToBounds = true
         
@@ -76,7 +98,7 @@ class AccountViewController: SuperViewController,UITableViewDelegate, UITableVie
     }
     // MARK: -
     // MARK: -  Action Event
-    @IBAction func barBtnSettingClicked(_ sender: UIBarButtonItem)
+    @objc func barBtnSettingClicked()
     {
         let SettingVC = self.storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
         
@@ -86,19 +108,32 @@ class AccountViewController: SuperViewController,UITableViewDelegate, UITableVie
     
     @IBAction func btnLikedClicked(sender : UIButton)
     {
+        let likedVc = appDelegate?.mainStoryboard.instantiateViewController(withIdentifier: "LikedNewsViewController") as! LikedNewsViewController
         
+        self.navigationController?.pushViewController(likedVc, animated: true)
     }
     @IBAction func btnTagsClicked(sender : UIButton)
     {
+        let bookmarkList = appDelegate?.mainStoryboard.instantiateViewController(withIdentifier: "BookmarkListViewController") as! BookmarkListViewController
+        bookmarkList.tagType = .TagList
+        self.navigationController?.pushViewController(bookmarkList, animated: true)
         
     }
     @IBAction func btnBookMarkClicked(sender : UIButton)
     {
+        let bookmarkList = appDelegate?.mainStoryboard.instantiateViewController(withIdentifier: "BookmarkListViewController") as! BookmarkListViewController
         
+        bookmarkList.tagType = .BookmarkList
+        self.navigationController?.pushViewController(bookmarkList, animated: true)
     }
-    // MARK: -
-    // MARK: - UITable view Data Source and Delegate
     
+}
+
+// MARK: -
+// MARK: - UITable view Data Source and Delegate
+
+extension AccountViewController : UITableViewDelegate, UITableViewDataSource
+{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return 5
@@ -106,101 +141,99 @@ class AccountViewController: SuperViewController,UITableViewDelegate, UITableVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-
-            switch indexPath.row
-            {
-            case 0:
-                
-                let identifier = "ImageNewsTableViewCell"
-                let cell = tblView.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
-                
-                cell.configureCell(data: [:])
-                return cell
-                
-            case 1:
-                
-                let identifier = "ImageNewsTableViewCell"
-                let cell = tblView.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
-                
-                cell.configureCell(data: [:])
-                cell.lblHeadline.text = "Ravi Shastri defends Ajinkya Rahane's omission from first two Tests"
-                cell.lblDetails.text = ""
-                return cell
-                
-            case 2:
-                
-                let identifier = "ImageNewsTableViewCell"
-                let cell = tblView.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
-                
-                cell.configureCell(data: [:])
-                cell.lblHeadline.text = ""
-                cell.lblDetails.text = "JOHANNESBURG: India coach Ravi Shastri on Monday defended the team management's decision to leave out Ajinkya Rahane from the first two Tests in South Africa, saying Rohit Sharma was the best option going by form.One of the most successful Indian batsmen overseas in recent years, vice-captain Rahane was not picked for the Tests in Cape Town and Centurion, with the Indian team management preferring to go with limited-overs specialist Sharma on current form."
-                return cell
-                
-            case 3 :
-                
-                let identifier = "TextNewsTableViewCell"
-                let cell = tblView.dequeueReusableCell(withIdentifier: identifier) as! TextNewsTableViewCell
-                
-                cell.configureCell(data: [:])
-                cell.lblHeadline.text = "Ravi Shastri defends Ajinkya Rahane's omission from first two Tests"
-                cell.lblDetails.text = "JOHANNESBURG: India coach Ravi Shastri on Monday defended the team management's decision to leave out Ajinkya Rahane from the first two Tests in South Africa, saying Rohit Sharma was the best option going by form.One of the most successful Indian batsmen overseas in recent years, vice-captain Rahane was not picked for the Tests in Cape Town and Centurion, with the Indian team management preferring to go with limited-overs specialist Sharma on current form."
-                
-                return cell
-                
-            case 4 :
-                
-                let identifier = "TextNewsTableViewCell"
-                let cell = tblView.dequeueReusableCell(withIdentifier: identifier) as! TextNewsTableViewCell
-                
-                cell.configureCell(data: [:])
-                cell.lblHeadline.text = "Ravi Shastri defends Ajinkya Rahane's omission from first two Tests"
-                cell.lblDetails.text = ""
-                return cell
-                
-            case 5 :
-                
-                let identifier = "TextNewsTableViewCell"
-                let cell = tblView.dequeueReusableCell(withIdentifier: identifier) as! TextNewsTableViewCell
-                
-                cell.configureCell(data: [:])
-                cell.lblHeadline.text = ""
-                cell.lblDetails.text = "JOHANNESBURG: India coach Ravi Shastri on Monday defended the team management's decision to leave out Ajinkya Rahane from the first two Tests in South Africa, saying Rohit Sharma was the best option going by form.One of the most successful Indian batsmen overseas in recent years, vice-captain Rahane was not picked for the Tests in Cape Town and Centurion, with the Indian team management preferring to go with limited-overs specialist Sharma on current form."
-                return cell
-                
-            default:
-                
-                let identifier = "ImageNewsTableViewCell"
-                let cell = tblView.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
-                
-                cell.configureCell(data: [:])
-                cell.lblHeadline.text = "Ravi Shastri defends Ajinkya Rahane's omission from first two Tests"
-                cell.lblDetails.text = "JOHANNESBURG: India coach Ravi Shastri on Monday defended the team management's decision to leave out Ajinkya Rahane from the first two Tests in South Africa, saying Rohit Sharma was the best option going by form.One of the most successful Indian batsmen overseas in recent years, vice-captain Rahane was not picked for the Tests in Cape Town and Centurion, with the Indian team management preferring to go with limited-overs specialist Sharma on current form."
-                return cell
-            }
+        
+        switch indexPath.row
+        {
+        case 0:
+            
+            let identifier = "ImageNewsTableViewCell"
+            let cell = tblView.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
+            
+            cell.configureCell(data: [:])
+            return cell
+            
+        case 1:
+            
+            let identifier = "ImageNewsTableViewCell"
+            let cell = tblView.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
+            
+            cell.configureCell(data: [:])
+            cell.lblHeadline.text = "Ravi Shastri defends Ajinkya Rahane's omission from first two Tests"
+            cell.lblDetails.text = ""
+            return cell
+            
+        case 2:
+            
+            let identifier = "ImageNewsTableViewCell"
+            let cell = tblView.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
+            
+            cell.configureCell(data: [:])
+            cell.lblHeadline.text = ""
+            cell.lblDetails.text = "JOHANNESBURG: India coach Ravi Shastri on Monday defended the team management's decision to leave out Ajinkya Rahane from the first two Tests in South Africa, saying Rohit Sharma was the best option going by form.One of the most successful Indian batsmen overseas in recent years, vice-captain Rahane was not picked for the Tests in Cape Town and Centurion, with the Indian team management preferring to go with limited-overs specialist Sharma on current form."
+            return cell
+            
+        case 3 :
+            
+            let identifier = "TextNewsTableViewCell"
+            let cell = tblView.dequeueReusableCell(withIdentifier: identifier) as! TextNewsTableViewCell
+            
+            cell.configureCell(data: [:])
+            cell.lblHeadline.text = "Ravi Shastri defends Ajinkya Rahane's omission from first two Tests"
+            cell.lblDetails.text = "JOHANNESBURG: India coach Ravi Shastri on Monday defended the team management's decision to leave out Ajinkya Rahane from the first two Tests in South Africa, saying Rohit Sharma was the best option going by form.One of the most successful Indian batsmen overseas in recent years, vice-captain Rahane was not picked for the Tests in Cape Town and Centurion, with the Indian team management preferring to go with limited-overs specialist Sharma on current form."
+            
+            return cell
+            
+        case 4 :
+            
+            let identifier = "TextNewsTableViewCell"
+            let cell = tblView.dequeueReusableCell(withIdentifier: identifier) as! TextNewsTableViewCell
+            
+            cell.configureCell(data: [:])
+            cell.lblHeadline.text = "Ravi Shastri defends Ajinkya Rahane's omission from first two Tests"
+            cell.lblDetails.text = ""
+            return cell
+            
+        case 5 :
+            
+            let identifier = "TextNewsTableViewCell"
+            let cell = tblView.dequeueReusableCell(withIdentifier: identifier) as! TextNewsTableViewCell
+            
+            cell.configureCell(data: [:])
+            cell.lblHeadline.text = ""
+            cell.lblDetails.text = "JOHANNESBURG: India coach Ravi Shastri on Monday defended the team management's decision to leave out Ajinkya Rahane from the first two Tests in South Africa, saying Rohit Sharma was the best option going by form.One of the most successful Indian batsmen overseas in recent years, vice-captain Rahane was not picked for the Tests in Cape Town and Centurion, with the Indian team management preferring to go with limited-overs specialist Sharma on current form."
+            return cell
+            
+        default:
+            
+            let identifier = "ImageNewsTableViewCell"
+            let cell = tblView.dequeueReusableCell(withIdentifier: identifier) as! ImageNewsTableViewCell
+            
+            cell.configureCell(data: [:])
+            cell.lblHeadline.text = "Ravi Shastri defends Ajinkya Rahane's omission from first two Tests"
+            cell.lblDetails.text = "JOHANNESBURG: India coach Ravi Shastri on Monday defended the team management's decision to leave out Ajinkya Rahane from the first two Tests in South Africa, saying Rohit Sharma was the best option going by form.One of the most successful Indian batsmen overseas in recent years, vice-captain Rahane was not picked for the Tests in Cape Town and Centurion, with the Indian team management preferring to go with limited-overs specialist Sharma on current form."
+            return cell
+        }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
         
         let NewsDetailsVC = self.storyboard?.instantiateViewController(withIdentifier: "NewsDetailsViewController") as! NewsDetailsViewController
-                self.present(UINavigationController(rootViewController: NewsDetailsVC), animated: true) {
-        
-                }
-        //self.navigationController?.pushViewController(NewsDetailsVC, animated: true)
+        self.present(UINavigationController(rootViewController: NewsDetailsVC), animated: true) {
+            
+        }
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView)
     {
         if scrollView.contentOffset.y > 0
         {
-           cnHeaderTop.constant = -(scrollView.contentOffset.y)
+            cnHeaderTop.constant = -(scrollView.contentOffset.y)
         }
         else
         {
-           cnHeaderTop.constant = 0
+            cnHeaderTop.constant = 0
         }
         
     }
-    
 }

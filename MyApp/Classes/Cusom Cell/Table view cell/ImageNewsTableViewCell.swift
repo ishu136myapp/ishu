@@ -71,7 +71,7 @@ class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
             
             if let AccountVC = self.viewController?.storyboard?.instantiateViewController(withIdentifier: "AccountViewController") as? AccountViewController
             {
-                self.viewController?.navigationController?.pushViewController(AccountVC, animated: true)
+                AccountVC.accountType = .Profile; self.viewController?.navigationController?.pushViewController(AccountVC, animated: true)
 
             }
             

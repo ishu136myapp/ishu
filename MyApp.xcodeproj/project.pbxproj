@@ -35,6 +35,15 @@
 		7021EC3220374678003B2186 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7021EC3120374678003B2186 /* CustomTabBarController.swift */; };
 		7022C265202A182800D4EDF0 /* OptionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7022C264202A182800D4EDF0 /* OptionView.xib */; };
 		7022C267202A184B00D4EDF0 /* OptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7022C266202A184B00D4EDF0 /* OptionView.swift */; };
+		7022CDEF203C935F00BA2810 /* SuggesstionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7022CDEE203C935F00BA2810 /* SuggesstionTableViewCell.swift */; };
+		70233D4420411E0F00511CFB /* CropImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70233D4320411E0F00511CFB /* CropImageViewController.swift */; };
+		70233D46204133D700511CFB /* BookmarkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70233D45204133D700511CFB /* BookmarkListViewController.swift */; };
+		70233D48204149AE00511CFB /* LikedNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70233D47204149AE00511CFB /* LikedNewsViewController.swift */; };
+		70233D4A2041794C00511CFB /* SignInRequiredPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70233D492041794C00511CFB /* SignInRequiredPop.swift */; };
+		70233D4C2041796900511CFB /* SignInRequiredPop.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70233D4B2041796900511CFB /* SignInRequiredPop.xib */; };
+		70233D4E20419C2400511CFB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70233D4D20419C2400511CFB /* LoginViewController.swift */; };
+		70233D512041B14C00511CFB /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70233D502041B14C00511CFB /* RegisterViewController.swift */; };
+		70233D532041E05A00511CFB /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70233D522041E05A00511CFB /* ForgotPasswordViewController.swift */; };
 		7023855F20124BB90070A97C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7023855E20124BB90070A97C /* AppDelegate.swift */; };
 		7023856420124BB90070A97C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7023856220124BB90070A97C /* Main.storyboard */; };
 		7023856620124BB90070A97C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7023856520124BB90070A97C /* Assets.xcassets */; };
@@ -87,6 +96,9 @@
 		702E21E22020D70A00FDCEB9 /* TagLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E21E02020D70A00FDCEB9 /* TagLineTableViewCell.swift */; };
 		702E21E32020D70A00FDCEB9 /* TagLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 702E21E12020D70A00FDCEB9 /* TagLineTableViewCell.xib */; };
 		702E21E52020F2A400FDCEB9 /* BookmarkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702E21E42020F2A400FDCEB9 /* BookmarkDetailsViewController.swift */; };
+		703C70762041E3C7002C9F3E /* TermsAncConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C70752041E3C7002C9F3E /* TermsAncConditionViewController.swift */; };
+		703C70782041EAC7002C9F3E /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C70772041EAC7002C9F3E /* ChangePasswordViewController.swift */; };
+		703C707A2041F360002C9F3E /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703C70792041F360002C9F3E /* EditProfileViewController.swift */; };
 		703EF867201CF75700FEE3D7 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703EF865201CF75700FEE3D7 /* ProfileTableViewCell.swift */; };
 		703EF868201CF75700FEE3D7 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 703EF866201CF75700FEE3D7 /* ProfileTableViewCell.xib */; };
 		703EF86F201D001000FEE3D7 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 703EF869201D000F00FEE3D7 /* Montserrat-SemiBold.ttf */; };
@@ -135,6 +147,15 @@
 		7021EC3120374678003B2186 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		7022C264202A182800D4EDF0 /* OptionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionView.xib; sourceTree = "<group>"; };
 		7022C266202A184B00D4EDF0 /* OptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionView.swift; sourceTree = "<group>"; };
+		7022CDEE203C935F00BA2810 /* SuggesstionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggesstionTableViewCell.swift; sourceTree = "<group>"; };
+		70233D4320411E0F00511CFB /* CropImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropImageViewController.swift; sourceTree = "<group>"; };
+		70233D45204133D700511CFB /* BookmarkListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkListViewController.swift; sourceTree = "<group>"; };
+		70233D47204149AE00511CFB /* LikedNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedNewsViewController.swift; sourceTree = "<group>"; };
+		70233D492041794C00511CFB /* SignInRequiredPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequiredPop.swift; sourceTree = "<group>"; };
+		70233D4B2041796900511CFB /* SignInRequiredPop.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInRequiredPop.xib; sourceTree = "<group>"; };
+		70233D4D20419C2400511CFB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		70233D502041B14C00511CFB /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		70233D522041E05A00511CFB /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		7023855B20124BB90070A97C /* MyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7023855E20124BB90070A97C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7023856320124BB90070A97C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -189,6 +210,9 @@
 		702E21E02020D70A00FDCEB9 /* TagLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLineTableViewCell.swift; sourceTree = "<group>"; };
 		702E21E12020D70A00FDCEB9 /* TagLineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagLineTableViewCell.xib; sourceTree = "<group>"; };
 		702E21E42020F2A400FDCEB9 /* BookmarkDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkDetailsViewController.swift; sourceTree = "<group>"; };
+		703C70752041E3C7002C9F3E /* TermsAncConditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsAncConditionViewController.swift; sourceTree = "<group>"; };
+		703C70772041EAC7002C9F3E /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		703C70792041F360002C9F3E /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
 		703EF865201CF75700FEE3D7 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		703EF866201CF75700FEE3D7 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 		703EF869201D000F00FEE3D7 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -228,6 +252,7 @@
 				70046EBD2013E7FE00DBBB88 /* Tab Bar Classes */,
 				709D8EE72013F0D800764F4E /* Flow Classess */,
 				7021EC3320374682003B2186 /* TabBarController */,
+				70233D4F20419C4000511CFB /* LRF */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -286,6 +311,7 @@
 				702E21E12020D70A00FDCEB9 /* TagLineTableViewCell.xib */,
 				7028749D202A233700C325D5 /* OptionTableViewCell.swift */,
 				7028749E202A233700C325D5 /* OptionTableViewCell.xib */,
+				7022CDEE203C935F00BA2810 /* SuggesstionTableViewCell.swift */,
 			);
 			path = "Table view cell";
 			sourceTree = "<group>";
@@ -349,8 +375,23 @@
 			children = (
 				7022C266202A184B00D4EDF0 /* OptionView.swift */,
 				7022C264202A182800D4EDF0 /* OptionView.xib */,
+				70233D492041794C00511CFB /* SignInRequiredPop.swift */,
+				70233D4B2041796900511CFB /* SignInRequiredPop.xib */,
 			);
 			path = "Custom View";
+			sourceTree = "<group>";
+		};
+		70233D4F20419C4000511CFB /* LRF */ = {
+			isa = PBXGroup;
+			children = (
+				70233D4D20419C2400511CFB /* LoginViewController.swift */,
+				70233D502041B14C00511CFB /* RegisterViewController.swift */,
+				70233D522041E05A00511CFB /* ForgotPasswordViewController.swift */,
+				703C70752041E3C7002C9F3E /* TermsAncConditionViewController.swift */,
+				703C70772041EAC7002C9F3E /* ChangePasswordViewController.swift */,
+				703C70792041F360002C9F3E /* EditProfileViewController.swift */,
+			);
+			path = LRF;
 			sourceTree = "<group>";
 		};
 		7023855220124BB90070A97C = {
@@ -493,6 +534,9 @@
 				709D8EE42013F0BE00764F4E /* NewsDetailsViewController.swift */,
 				703EF87B201F747F00FEE3D7 /* SettingsViewController.swift */,
 				702E21E42020F2A400FDCEB9 /* BookmarkDetailsViewController.swift */,
+				70233D4320411E0F00511CFB /* CropImageViewController.swift */,
+				70233D45204133D700511CFB /* BookmarkListViewController.swift */,
+				70233D47204149AE00511CFB /* LikedNewsViewController.swift */,
 			);
 			path = "Flow Classess";
 			sourceTree = "<group>";
@@ -566,6 +610,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70233D4C2041796900511CFB /* SignInRequiredPop.xib in Resources */,
 				703EF873201D001000FEE3D7 /* Montserrat-Light.ttf in Resources */,
 				7023856920124BB90070A97C /* LaunchScreen.storyboard in Resources */,
 				7023856620124BB90070A97C /* Assets.xcassets in Resources */,
@@ -606,6 +651,7 @@
 				70281148201BE95B00E55E1A /* MILoader.swift in Sources */,
 				7028115B201BE95B00E55E1A /* ExtensionUIButton.swift in Sources */,
 				7028114E201BE95B00E55E1A /* CoreDataContext+Extension.swift in Sources */,
+				70233D4E20419C2400511CFB /* LoginViewController.swift in Sources */,
 				703EF867201CF75700FEE3D7 /* ProfileTableViewCell.swift in Sources */,
 				701DC9BD201653360020103D /* GenericView.swift in Sources */,
 				703EF87F201F77AB00FEE3D7 /* SettingsTableViewCell.swift in Sources */,
@@ -624,6 +670,8 @@
 				70281119201BAD4F00E55E1A /* TextNewsTableViewCell.swift in Sources */,
 				702D21F02035EF0F009EA434 /* BubbleCollectionViewCell.swift in Sources */,
 				709D8F282013F62000764F4E /* APIRequest.swift in Sources */,
+				70233D512041B14C00511CFB /* RegisterViewController.swift in Sources */,
+				70233D4420411E0F00511CFB /* CropImageViewController.swift in Sources */,
 				7021EC3220374678003B2186 /* CustomTabBarController.swift in Sources */,
 				70281153201BE95B00E55E1A /* ExtensionDate.swift in Sources */,
 				70281152201BE95B00E55E1A /* ExtensionArray.swift in Sources */,
@@ -635,11 +683,13 @@
 				703EF876201D0D4E00FEE3D7 /* AccountViewController.swift in Sources */,
 				7021EC2F20373A9F003B2186 /* StringTrimExtension.swift in Sources */,
 				70281162201BE95B00E55E1A /* ExtensionUITextView.swift in Sources */,
+				703C70762041E3C7002C9F3E /* TermsAncConditionViewController.swift in Sources */,
 				70281165201BE95B00E55E1A /* ExtensionURL.swift in Sources */,
 				701DC9B9201653360020103D /* GenericImageView.swift in Sources */,
 				70281158201BE95B00E55E1A /* ExtensionString.swift in Sources */,
 				70281154201BE95B00E55E1A /* ExtensionDictionary.swift in Sources */,
 				70281157201BE95B00E55E1A /* ExtensionNSObject.swift in Sources */,
+				70233D4A2041794C00511CFB /* SignInRequiredPop.swift in Sources */,
 				7028115E201BE95B00E55E1A /* ExtensionUIImageView.swift in Sources */,
 				70046EBC2013E7E500DBBB88 /* HomeViewController.swift in Sources */,
 				709D8EE52013F0BE00764F4E /* NewsDetailsViewController.swift in Sources */,
@@ -654,10 +704,13 @@
 				70252CDB20277A4B00E6E74A /* SearchNewsCollectionViewCell.swift in Sources */,
 				7028114D201BE95B00E55E1A /* CoreData.swift in Sources */,
 				7022C267202A184B00D4EDF0 /* OptionView.swift in Sources */,
+				70233D48204149AE00511CFB /* LikedNewsViewController.swift in Sources */,
+				70233D46204133D700511CFB /* BookmarkListViewController.swift in Sources */,
 				70281164201BE95B00E55E1A /* ExtensionUIViewController.swift in Sources */,
 				70046EC12013E91B00DBBB88 /* UploadViewController.swift in Sources */,
 				701DC9BC201653360020103D /* GenericTextView.swift in Sources */,
 				701DC9B8201653360020103D /* GenericButton.swift in Sources */,
+				70233D532041E05A00511CFB /* ForgotPasswordViewController.swift in Sources */,
 				70281166201BE95B00E55E1A /* MIKeyboardManager.swift in Sources */,
 				70281155201BE95B00E55E1A /* ExtensionDouble.swift in Sources */,
 				70046EBF2013E88400DBBB88 /* SearchNewsViewController.swift in Sources */,
@@ -667,11 +720,14 @@
 				70281149201BE95B00E55E1A /* MIPopUpOverlay.swift in Sources */,
 				7021EC2B20373A9F003B2186 /* ActiveLabel.swift in Sources */,
 				7021EC2C20373A9F003B2186 /* ActiveType.swift in Sources */,
+				703C70782041EAC7002C9F3E /* ChangePasswordViewController.swift in Sources */,
 				7028115C201BE95B00E55E1A /* ExtensionUIColor.swift in Sources */,
 				709D8F292013F62000764F4E /* ApplicationConstant.swift in Sources */,
+				7022CDEF203C935F00BA2810 /* SuggesstionTableViewCell.swift in Sources */,
 				7028114B201BE95B00E55E1A /* MIToastAlert.swift in Sources */,
 				701DC9AD20164F720020103D /* ImageNewsTableViewCell.swift in Sources */,
 				70281161201BE95B00E55E1A /* ExtensionUITextField.swift in Sources */,
+				703C707A2041F360002C9F3E /* EditProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

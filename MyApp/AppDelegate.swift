@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-     let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
     var _tabbarController : CustomTabBarController!
     var tabbarController : CustomTabBarController?
     {
@@ -41,8 +41,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow (frame: UIScreen.main.bounds)
         self.window?.makeKeyAndVisible()
         
-        self.tabbarController?.UpdateAccountTab(isLogin: true)
-        self.window?.rootViewController = self.tabbarController
+//        self.tabbarController?.UpdateAccountTab(isLogin: true)
+//        self.window?.rootViewController = self.tabbarController
+        let login = mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        self.window?.rootViewController = UINavigationController(rootViewController: login)
         return true
     }
 

@@ -55,6 +55,8 @@ class NewsDetailsCollectionViewCell: UICollectionViewCell,UICollectionViewDataSo
             
             if let AccountVC = self.viewController?.storyboard?.instantiateViewController(withIdentifier: "AccountViewController") as? AccountViewController
             {
+                
+                AccountVC.accountType = .Profile;
                 self.viewController?.navigationController?.pushViewController(AccountVC, animated: true)
                 
             }
