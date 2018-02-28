@@ -10,6 +10,7 @@ import UIKit
 
 class RegisterViewController: SuperViewController {
 
+    var initateType : initiateType = .firstTime
     @IBOutlet var imgVProfile : UIImageView!
     @IBOutlet var btnSignUp : UIButton!
     @IBOutlet var btnAcceptTC : UIButton!
@@ -36,6 +37,13 @@ class RegisterViewController: SuperViewController {
         self.title = "SIGN UP"
         btnSignUp.layer.cornerRadius = 5
         btnSignUp.layer.masksToBounds = true
+        if initateType == .fromTabbar
+        {
+            let image =   UIImage(named: "cross")?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+            
+            let barBtnSetting = UIBarButtonItem(image: image, style: .plain, target: self, action:#selector(self.btnBackClicked(_:)))
+            self.navigationItem.leftBarButtonItem = barBtnSetting
+        }
         
     }
     
@@ -62,7 +70,7 @@ class RegisterViewController: SuperViewController {
     }
     @IBAction func btnTermsConditionClicked(sender : UIButton)
     {
-        let termsVC = appDelegate?.mainStoryboard.instantiateViewController(withIdentifier: "TermsAncConditionViewController") as! TermsAncConditionViewController
+        let termsVC = mainStoryboard.instantiateViewController(withIdentifier: "TermsAncConditionViewController") as! TermsAncConditionViewController
         
         self.present(UINavigationController(rootViewController: termsVC), animated: true, completion: nil)
         

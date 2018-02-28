@@ -7,9 +7,14 @@
 //
 
 import UIKit
+enum initiateType {
+    case firstTime
+    case fromTabbar
+}
 
 class LoginViewController: SuperViewController {
 
+    var initateType : initiateType = .firstTime
     @IBOutlet var btnClose : UIButton!
     @IBOutlet var btnSkip : UIButton!
     @IBOutlet var btnSignIn : UIButton!
@@ -34,51 +39,95 @@ class LoginViewController: SuperViewController {
         btnSignIn.layer.cornerRadius = 5
         btnSignIn.layer.masksToBounds = true
         
+        if initateType == .firstTime
+        {
+            btnSkip.isHidden = false
+            btnClose.isHidden = true
+        }
+        else
+        {
+            btnSkip.isHidden = true
+            btnClose.isHidden = false
+        }
+        
     }
 
+    func login()
+    {
+        self.dismiss(animated: true, completion: {
+            
+        })
+        appDelegate?.isLogin = true
+        appDelegate?._tabbarController = nil
+        appDelegate?.tabbarController?.UpdateAccountTab(isLogin: true)
+        appDelegate?.setWindowRootVC((appDelegate?.tabbarController)!, animated: true, completion: { (complition) in
+            
+        })
+    }
     // MARK: -
     // MARK: - Action Event
     
     @IBAction func btnSignInClicked(sender : UIButton)
     {
-        let changePasswordVC = appDelegate?.mainStoryboard.instantiateViewController(withIdentifier: "ChangePasswordViewController") as! ChangePasswordViewController
+        if (self.initateType == .fromTabbar)
+        {
+            self.dismiss(animated: true, completion: {
+                
+            })
+            appDelegate?.isLogin = true
+            appDelegate?._tabbarController = nil
+            appDelegate?.tabbarController?.UpdateAccountTab(isLogin: true)
+            appDelegate?.setWindowRootVC((appDelegate?.tabbarController)!, animated: true, completion: { (complition) in
+                
+            })
+            
+        }
+        else
+        {
+            self.login()
+        }
         
-        self.navigationController?.pushViewController(changePasswordVC, animated: true)
     }
     
     @IBAction func btnForgotPasswordClicked(sender : UIButton)
     {
-        let forgotVC = appDelegate?.mainStoryboard.instantiateViewController(withIdentifier: "ForgotPasswordViewController") as! ForgotPasswordViewController
+        let forgotVC = mainStoryboard.instantiateViewController(withIdentifier: "ForgotPasswordViewController") as! ForgotPasswordViewController
         
         self.navigationController?.pushViewController(forgotVC, animated: true)
     }
     
     @IBAction func btnSignUpClicked(sender : UIButton)
     {
-        let signUpVC = appDelegate?.mainStoryboard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
+        let signUpVC = mainStoryboard.instantiateViewController(withIdentifier: "RegisterViewController") as! RegisterViewController
         
         self.navigationController?.pushViewController(signUpVC, animated: true)
     }
     
     @IBAction func btnFacebookClicked(sender : UIButton)
     {
-        let editProfile = appDelegate?.mainStoryboard.instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
-        
-        self.navigationController?.pushViewController(editProfile, animated: true)
+        self.login()
     }
     
     @IBAction func btnGoogleClicked(sender : UIButton)
     {
-        
+        self.login()
     }
     
     @IBAction func btnSkipClicked(sender : UIButton)
     {
-        
+        self.dismiss(animated: true, completion: {
+            
+        })
+        appDelegate?.isLogin = false
+        appDelegate?._tabbarController = nil
+        appDelegate?.tabbarController?.UpdateAccountTab(isLogin: false)
+        appDelegate?.setWindowRootVC((appDelegate?.tabbarController)!, animated: true, completion: { (complition) in
+            
+        })
     }
     
     @IBAction func btnCloseClicked(sender : UIButton)
     {
-        
+        self.dismiss(animated: true) {}
     }
 }

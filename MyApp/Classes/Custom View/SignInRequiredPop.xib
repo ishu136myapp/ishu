@@ -29,7 +29,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="251" text="To use this feature you must be signed in to your MYTAG account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3P-NG-Duv">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="251" text="To use this feature you must be signed in to your LALLANTOPTAG account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3P-NG-Duv">
                     <rect key="frame" x="26" y="62" width="200" height="51.5"/>
                     <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
                     <nil key="textColor"/>
@@ -68,7 +68,7 @@
                         <constraint firstAttribute="height" constant="50" id="0eJ-Br-Ick"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
-                    <state key="normal" title="CREATE MYTAG ACCOUNT">
+                    <state key="normal" title="CREATE ACCOUNT">
                         <color key="titleColor" red="0.47450980390000003" green="0.2666666667" blue="0.88235294119999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <connections>

@@ -22,6 +22,8 @@ class GenericTextField: UITextField {
     {
             
         self.autocorrectionType = .no
+        
+        //self.font = UIFont(name: (self.font?.fontName)!, size: IS_iPhone_5 ? (self.font?.pointSize)! - 2 : (self.font?.pointSize)!)
     }
 
 }

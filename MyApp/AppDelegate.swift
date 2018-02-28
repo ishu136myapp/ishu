@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import SDWebImage
+import IQKeyboardManagerSwift
+import Alamofire
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+    var isLogin : Bool = false
     var _tabbarController : CustomTabBarController!
     var tabbarController : CustomTabBarController?
     {
@@ -37,13 +40,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
     {
+        // IQKeyboarManager
+        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().shouldResignOnTouchOutside = true
+        
         // Window root
         self.window = UIWindow (frame: UIScreen.main.bounds)
         self.window?.makeKeyAndVisible()
         
-//        self.tabbarController?.UpdateAccountTab(isLogin: true)
-//        self.window?.rootViewController = self.tabbarController
         let login = mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+        login.initateType = .firstTime
         self.window?.rootViewController = UINavigationController(rootViewController: login)
         return true
     }
@@ -58,6 +64,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {}
 
-    
+    func setWindowRootVC(_ vc: UIViewController, animated: Bool, completion completed: @escaping (_ finished: Bool) -> Void)
+    {
+        UIView.transition(with: window!, duration: animated ? 0.3 : 0.0, options: .transitionCrossDissolve, animations: {() -> Void in
+            let oldState: Bool = UIView.areAnimationsEnabled
+            UIView.setAnimationsEnabled(false)
+            self.window?.rootViewController = vc
+            UIView.setAnimationsEnabled(oldState)
+            
+        }, completion: {(_ finished: Bool) -> Void in
+            
+            completed(finished)
+            
+        })
+    }
 }
 

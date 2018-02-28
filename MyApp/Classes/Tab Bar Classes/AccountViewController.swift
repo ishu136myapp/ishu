@@ -82,6 +82,7 @@ class AccountViewController: SuperViewController {
         refreshControl = UIRefreshControl()
         refreshControl.addTarget(self, action: #selector(self.pullToRefresh), for: .valueChanged)
         tblView.addSubview(refreshControl)
+        
     }
     
     // MARK: -
@@ -108,25 +109,32 @@ class AccountViewController: SuperViewController {
     
     @IBAction func btnLikedClicked(sender : UIButton)
     {
-        let likedVc = appDelegate?.mainStoryboard.instantiateViewController(withIdentifier: "LikedNewsViewController") as! LikedNewsViewController
+        let likedVc = mainStoryboard.instantiateViewController(withIdentifier: "LikedNewsViewController") as! LikedNewsViewController
         
         self.navigationController?.pushViewController(likedVc, animated: true)
     }
     @IBAction func btnTagsClicked(sender : UIButton)
     {
-        let bookmarkList = appDelegate?.mainStoryboard.instantiateViewController(withIdentifier: "BookmarkListViewController") as! BookmarkListViewController
+        let bookmarkList = mainStoryboard.instantiateViewController(withIdentifier: "BookmarkListViewController") as! BookmarkListViewController
         bookmarkList.tagType = .TagList
         self.navigationController?.pushViewController(bookmarkList, animated: true)
         
     }
     @IBAction func btnBookMarkClicked(sender : UIButton)
     {
-        let bookmarkList = appDelegate?.mainStoryboard.instantiateViewController(withIdentifier: "BookmarkListViewController") as! BookmarkListViewController
+        let bookmarkList = mainStoryboard.instantiateViewController(withIdentifier: "BookmarkListViewController") as! BookmarkListViewController
         
         bookmarkList.tagType = .BookmarkList
         self.navigationController?.pushViewController(bookmarkList, animated: true)
     }
     
+    @IBAction func btnEditProfileClicked(sender : UIButton)
+    {
+        let editProfile = mainStoryboard.instantiateViewController(withIdentifier: "EditProfileViewController") as! EditProfileViewController
+        
+        self.navigationController?.pushViewController(editProfile, animated: true)
+
+    }
 }
 
 // MARK: -

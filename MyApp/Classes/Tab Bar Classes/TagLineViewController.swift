@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TagLineViewController: SuperViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+class TagLineViewController: SuperViewController {
 
     @IBOutlet var tblTag : UITableView!
     var arrBookmark = Array<Any>()
@@ -85,9 +85,13 @@ class TagLineViewController: SuperViewController, UITableViewDelegate, UITableVi
         
     }
 
-    // MARK: -
-    // MARK: - UITable view data source and delegate
-    
+}
+
+// MARK: -
+// MARK: - UITable view data source and delegate
+
+extension TagLineViewController : UITableViewDelegate, UITableViewDataSource
+{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return arrBookmark.count
@@ -122,10 +126,12 @@ class TagLineViewController: SuperViewController, UITableViewDelegate, UITableVi
         BookmarkDetailsVC.iObject = "#" + dict.valueForString(key: "title")
         self.navigationController?.pushViewController(BookmarkDetailsVC, animated: true)
     }
-    
-    // MARK: -
-    // MARK: - UISearchBar delegate
-    
+}
+
+// MARK: -
+// MARK: - UISearchBar delegate
+extension TagLineViewController : UISearchBarDelegate
+{
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar)
     {
         searchBar.resignFirstResponder()

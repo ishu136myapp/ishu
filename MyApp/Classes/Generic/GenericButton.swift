@@ -22,7 +22,7 @@ class GenericButton: UIButton {
     func initialize()
     {
         
-       
+        //self.titleLabel?.font = UIFont(name: (self.titleLabel?.font.fontName)!, size: IS_iPhone_5 ? (self.titleLabel?.font.pointSize)! - 2 : (self.titleLabel?.font.pointSize)!)
         
     }
 

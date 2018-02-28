@@ -100,7 +100,7 @@ class ImageNewsTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollect
         self.lblTagline.handleHashtagTap { (tapString) in
             
             print(tapString)
-            let BookmarkDetailsVC = self.viewController?.storyboard?.instantiateViewController(withIdentifier: "BookmarkDetailsViewController") as! BookmarkDetailsViewController
+            let BookmarkDetailsVC = mainStoryboard.instantiateViewController(withIdentifier: "BookmarkDetailsViewController") as! BookmarkDetailsViewController
             BookmarkDetailsVC.iObject = "#" + tapString
             self.viewController?.navigationController?.pushViewController(BookmarkDetailsVC, animated: true)
         }

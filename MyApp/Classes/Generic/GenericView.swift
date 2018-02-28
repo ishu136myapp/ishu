@@ -9,13 +9,39 @@
 import UIKit
 
 class GenericView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    
+    //MARK:-
+    //MARK:- Override
+    
+    override func awakeFromNib(){
+        super.awakeFromNib()
+        
     }
-    */
-
+    
+    override init(frame: CGRect){
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder){
+        super.init(coder: aDecoder)
+        self.initialize()
+    }
+    
+    override func layoutSubviews(){
+        super.layoutSubviews()
+    }
+    
+    
+    //MARK:-
+    //MARK:- Initialize
+    
+    func initialize() {
+        
+        if  self.tag == 100 {
+            self.layer.cornerRadius = 10
+            self.layer.masksToBounds = true
+        
+        }
+        
+    }
 }

@@ -10,6 +10,9 @@ import Foundation
 
 import UIKit
 
+let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+
+
 let CColorTheme_760AFF = CRGB(r: 121, g: 68, b: 225)
 
 let CColorBlack_515253 = CRGB(r: 81, g: 82, b: 83)

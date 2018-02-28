@@ -21,7 +21,7 @@ class GenericLabel: UILabel {
     
     func initialize()
     {
-        
+        //self.font = UIFont(name: self.font.fontName, size: IS_iPhone_5 ? self.font.pointSize - 2 : self.font.pointSize)
     }
 
 }

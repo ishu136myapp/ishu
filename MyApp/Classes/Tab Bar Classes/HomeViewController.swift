@@ -72,8 +72,7 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        switch indexPath.row
-        {
+        switch indexPath.row {
         case 0:
             
             let identifier = "ImageNewsTableViewCell"
@@ -95,6 +94,13 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource
                 
             })
             
+            cell.btnComment.touchUpInside( genericTouchUpInsideHandler: { (sender) in
+                
+                let commentVC = mainStoryboard.instantiateViewController(withIdentifier: "CommentViewController") as! CommentViewController
+                self.present(commentVC, animated: true, completion: {
+                    
+                })
+            })
             return cell
             
         case 1:
